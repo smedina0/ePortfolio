@@ -23,6 +23,10 @@
     background-position: center center;
     background-size: cover;
   }
+  :focus-visible {
+    outline: 9px double black !important;
+    box-shadow: 0 0 0 6px white !important;
+  }
   .content {
     p {
       color: #000;

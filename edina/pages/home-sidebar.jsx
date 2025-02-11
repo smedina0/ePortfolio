@@ -5,7 +5,7 @@ import HomeSidebar from "../components/pages/home-sidebar";
 const index = () => {
   return (
     <>
-      <Seo pageTitle="Home Sidebar" />
+      <Seo pageTitle="Home" />
       <HomeSidebar />
     </>
   );

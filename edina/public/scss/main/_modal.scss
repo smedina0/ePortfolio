@@ -1,4 +1,8 @@
 // Modal css\
+:focus-visible {
+  outline: 9px double black !important;
+  box-shadow: 0 0 0 6px white !important;
+}
 
 .custom-overlay {
   position: fixed;

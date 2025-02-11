@@ -109,7 +109,7 @@ blockquote {
 
 blockquote:before,
 blockquote:after {
-  content: "";
+  content: '';
   content: none;
 }
 ul,
@@ -291,7 +291,7 @@ textarea {
   border-radius: 0;
   font-size: 13px;
   resize: vertical;
-  font-family: "Poppins";
+  font-family: 'Poppins';
   letter-spacing: 1.2px !important;
 
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
@@ -310,20 +310,20 @@ textarea {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-input[type="text"],
-input[type="password"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="date"],
-input[type="month"],
-input[type="time"],
-input[type="week"],
-input[type="number"],
-input[type="email"],
-input[type="url"],
-input[type="search"],
-input[type="tel"],
-input[type="color"],
+input[type='text'],
+input[type='password'],
+input[type='datetime'],
+input[type='datetime-local'],
+input[type='date'],
+input[type='month'],
+input[type='time'],
+input[type='week'],
+input[type='number'],
+input[type='email'],
+input[type='url'],
+input[type='search'],
+input[type='tel'],
+input[type='color'],
 .uneditable-input {
   border-radius: 0;
   font-size: 13px;
@@ -335,7 +335,7 @@ input[type="color"],
   -ms-box-sizing: border-box; /* IE 10 + */
   box-sizing: border-box; /* Opera/IE 8+ */
 
-  font-family: "Poppins";
+  font-family: 'Poppins';
 
   line-height: 1.6;
   padding: 10px !important;
@@ -349,28 +349,32 @@ input[type="color"],
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+:focus-visible {
+  outline: 9px double black !important;
+  box-shadow: 0 0 0 6px white !important;
+}
 
 textarea:focus,
-input[type="text"]:focus,
-input[type="password"]:focus,
-input[type="datetime"]:focus,
-input[type="datetime-local"]:focus,
-input[type="date"]:focus,
-input[type="month"]:focus,
-input[type="time"]:focus,
-input[type="week"]:focus,
-input[type="number"]:focus,
-input[type="email"]:focus,
-input[type="url"]:focus,
-input[type="search"]:focus,
-input[type="tel"]:focus,
-input[type="color"]:focus,
+input[type='text']:focus,
+input[type='password']:focus,
+input[type='datetime']:focus,
+input[type='datetime-local']:focus,
+input[type='date']:focus,
+input[type='month']:focus,
+input[type='time']:focus,
+input[type='week']:focus,
+input[type='number']:focus,
+input[type='email']:focus,
+input[type='url']:focus,
+input[type='search']:focus,
+input[type='tel']:focus,
+input[type='color']:focus,
 .uneditable-input:focus {
   border-color: #ccc;
   background: #eee;
 }
 
-input[type="submit"] {
+input[type='submit'] {
   padding: 13px 15px;
   height: 40px;
   line-height: 1;
@@ -390,14 +394,14 @@ input[type="submit"] {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-input[type="submit"]:hover {
+input[type='submit']:hover {
   background: #444;
 }
 select {
   padding: 8px;
   border: 2px solid #eee;
 }
-input[type="button"] {
+input[type='button'] {
   cursor: pointer;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;

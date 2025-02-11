@@ -1,63 +1,23 @@
-import React, { useEffect } from "react";
-import { FaMoon, FaSun } from "react-icons/fa";
-import { useState } from "react";
-import Sidebar from "../../header/Sidebar";
-import Hero from "../../hero/Hero";
-import About from "../../about/About";
-import Service from "../../service/Service";
-import Portfolio from "../../portfolio/Portfolio";
-import Testimonial from "../../testimonial/Testimonial";
-import Blog from "../../blog/Blog";
-import Contact from "../../Contact";
-import Address from "../../Address";
-import Map from "../../Map";
-import HeaderMobile from "../../header/HeaderMobile";
+import React, { useEffect } from 'react';
+import Sidebar from '../../header/Sidebar';
+import Hero from '../../hero/Hero';
+import About from '../../about/About';
+import Service from '../../service/Service';
+import Portfolio from '../../portfolio/Portfolio';
+import Testimonial from '../../testimonial/Testimonial';
+import Blog from '../../blog/Blog';
+import Contact from '../../Contact';
+import Address from '../../Address';
+import Map from '../../Map';
+import HeaderMobile from '../../header/HeaderMobile';
 
 const EdinaHomeSidebar = () => {
-  const [isDark, setIsDark] = useState(false);
-
   useEffect(() => {
-    document.querySelector("body").classList.remove("rtl");
+    document.querySelector('body').classList.remove('rtl');
   }, []);
 
-  const handleLabelClick = () => {
-    if (isDark) {
-      localStorage.setItem("theme-color", "theme-light");
-      document.querySelector("body").classList.add("theme-light");
-      document.querySelector("body").classList.remove("theme-dark");
-      setIsDark(false);
-    } else {
-      localStorage.setItem("theme-color", "theme-dark");
-      document.querySelector("body").classList.add("theme-dark");
-      document.querySelector("body").classList.remove("theme-light");
-      setIsDark(true);
-    }
-  };
-
   return (
-    <div
-      className={`home-light edina_tm_mainpart ${isDark ? "theme-dark" : ""}`}
-    >
-      {/* Start Dark & Light Mode Swicher  */}
-      <label
-        className={`theme-switcher-label d-flex  ${isDark ? "active" : ""}`}
-      >
-        <input
-          type="checkbox"
-          onClick={handleLabelClick}
-          className="theme-switcher"
-        />
-        <div className="switch-handle">
-          <i className="light-text" title="Switch to Dark">
-            <FaMoon />
-          </i>
-          <i className="dark-text" title="Switch to Light">
-            <FaSun />
-          </i>
-        </div>
-      </label>
-      {/* End Dark & Light Mode Swicher  */}
-
+    <div className="home-light edina_tm_mainpart">
       <header className="header-area">
         <div className="header-inner">
           <HeaderMobile />
@@ -70,7 +30,7 @@ const EdinaHomeSidebar = () => {
       <Hero />
       {/* End Hero */}
       <About />
-      {/* End Hero */}
+      {/* End About */}
       <div className="edina_tm_services" id="service">
         <div className="container">
           <div className="edina_tm_title">

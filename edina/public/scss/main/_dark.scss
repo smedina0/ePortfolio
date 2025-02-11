@@ -304,13 +304,15 @@
   border-bottom-color: rgba(169, 175, 195, 0.5);
 }
 .theme-dark .edina_tm_contact input:focus {
-  border-bottom-color: rgba(169, 175, 195, 1);
+  outline: 9px double black;
+  box-shadow: 0 0 0 6px white;
 }
 .theme-dark .edina_tm_contact textarea {
   border-bottom-color: rgba(169, 175, 195, 0.5);
 }
 .theme-dark .edina_tm_contact textarea:focus {
-  border-bottom-color: rgba(169, 175, 195, 1);
+  outline: 9px double black;
+  box-shadow: 0 0 0 6px white;
 }
 .theme-dark .edina_tm_contact .extra_info a {
   color: #a9afc3;
@@ -327,7 +329,7 @@
 }
 body.intro #preloader:before,
 body.intro #preloader:after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   top: 0;
@@ -344,7 +346,7 @@ body.intro #preloader:after {
   right: 0;
 }
 body.intro .loader_line:before {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   top: 50%;
@@ -360,7 +362,7 @@ body.intro .loader_line:before {
   animation: lineheight 1000ms ease-in-out 0s forwards;
 }
 body.intro .loader_line:after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   top: 0;
@@ -381,4 +383,9 @@ body.intro .loader_line:after {
 }
 .theme-dark .news_share ul li a {
   color: #eee;
+}
+
+:focus-visible {
+  outline: 9px double black !important;
+  box-shadow: 0 0 0 6px white !important;
 }
