@@ -19,7 +19,7 @@ const Hero = () => {
           <Image src={heroContent.heroImage} alt="brand" />
         </div>
         <div className="extra">
-          <h5 className="hello">Hello, I&apos;m {heroContent.name}</h5>
+          <h5 className="hello">Hello, I am {heroContent.name}</h5>
           <h1 className="name">
             <span className="typer-toper">{heroContent.description}</span>
           </h1>

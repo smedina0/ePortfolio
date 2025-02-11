@@ -54,7 +54,7 @@ const EdinaHomeRtl = () => {
           <HeaderMobile />
         </div>
       </header>
-      
+
       <Sidebar />
       <Hero />
       <About />
