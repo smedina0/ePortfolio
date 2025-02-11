@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Modal from "react-modal";
 import ReactTooltip from "react-tooltip";
-import Slider from "react-slick";
+// import Slider from "react-slick";
 import Social from "../Social";
 import portfolioData from "../../data/portfolio";
 import Image from "next/image";
