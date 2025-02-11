@@ -1,31 +1,10 @@
-import React from "react";
-// import Slider from "react-slick";
-import testimonialContent from "../../data/testimonial";
-import Image from "next/image";
+import React from 'react';
+import testimonialContent from '../../data/testimonial';
+import Image from 'next/image';
 
 export default function Testimonial() {
-  var settings = {
-    dots: true,
-    arrow: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 2,
-    slidesToScroll: 1,
-    autoplay: false,
-    responsive: [
-      {
-        breakpoint: 575,
-        settings: {
-          arrow: false,
-          slidesToShow: 1,
-          speed: 300,
-        },
-      },
-    ],
-  };
-
   return (
-    <Slider {...settings}>
+    <div className="testimonial-grid">
       {testimonialContent.map((val, i) => (
         <li
           key={i}
@@ -73,6 +52,6 @@ export default function Testimonial() {
           </div>
         </li>
       ))}
-    </Slider>
+    </div>
   );
 }

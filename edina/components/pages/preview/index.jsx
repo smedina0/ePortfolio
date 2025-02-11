@@ -1,7 +1,4 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import { useEffect } from 'react';
-// import Slider from "react-slick";
+import React, { useEffect } from 'react';
 
 const previewDemo = [
   {
@@ -16,7 +13,6 @@ const previewDemo = [
     img: '3',
     title: 'Home Sidebar',
     routerPath: '/home-sidebar',
-
     delayAnimation: '50',
   },
   {
@@ -35,25 +31,6 @@ const previewDemo = [
   },
 ];
 
-var settings = {
-  dots: true,
-  infinite: true,
-  speed: 500,
-  slidesToShow: 2,
-  slidesToScroll: 2,
-  autoplay: false,
-  responsive: [
-    {
-      breakpoint: 575,
-      settings: {
-        arrow: false,
-        slidesToShow: 1,
-        speed: 300,
-      },
-    },
-  ],
-};
-
 const EdinaPreview = () => {
   useEffect(() => {
     document.querySelector('body').classList.remove('theme-dark');
@@ -63,68 +40,48 @@ const EdinaPreview = () => {
     <div
       className="edina_tm_intro bg-image"
       style={{
-        backgroundImage: `url(img/1.jpg)`,
+        backgroundImage: `url(/img/1.jpg)`,
       }}
     >
-      <span className=" preview-sticker pos-sticker react-sticker">
+      <span className="preview-sticker pos-sticker react-sticker">
         <h6>NextJS</h6>
-        <Image
-          width={30}
-          height={30}
-          className="logo"
-          src="/img/intro/react.png"
-          alt="react nextjs"
-        />
+        <img className="logo" src="/img/intro/react.png" alt="react nextjs" />
       </span>
-      {/* preview sticker */}
 
       <div className="mainpart" id="demos">
         <div className="container">
           <div className="main_title">
-            <Image
-              width={92}
-              height={37}
-              src="/img/intro/logo.png"
-              alt="brand"
-            />
+            <img src="/img/intro/logo.png" alt="brand" />
             <p>Personal Portfolio React NextJS Template + RTL</p>
           </div>
-          {/* End main_title */}
 
           <div className="demo_list">
-            <ul>
-              <Slider {...settings} arrows={false}>
-                {' '}
-                {previewDemo.map((val) => (
-                  <li
-                    data-aos="fade-up"
-                    data-aos-duration="1200"
-                    data-aos-delay={val.delayAnimation}
-                    key={val.id}
-                  >
-                    <div className="list_inner">
-                      <Image
-                        width={590}
-                        height={344}
-                        src={`/img/intro/${val.img}.jpg`}
-                        alt="demo"
-                      />
-                      <h3>{val.title}</h3>
-                      <Link
-                        className="edina_tm_full_link"
-                        href={val.routerPath}
-                        target="_blank"
-                        rel="noreferrer"
-                      ></Link>
-                    </div>
-                  </li>
-                ))}
-              </Slider>
+            <ul className="preview-grid">
+              {previewDemo.map((val) => (
+                <li
+                  data-aos="fade-up"
+                  data-aos-duration="1200"
+                  data-aos-delay={val.delayAnimation}
+                  key={val.id}
+                >
+                  <div className="list_inner">
+                    <img src={`/img/intro/${val.img}.jpg`} alt="demo" />
+                    <h3>{val.title}</h3>
+                    <a
+                      className="edina_tm_full_link"
+                      href={val.routerPath}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <span className="sr-only">View {val.title}</span>
+                    </a>
+                  </div>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
       </div>
-      {/* End  .mainpart */}
 
       <div className="go_purchase">
         <h6 data-aos="fade-up" data-aos-duration="1200">
@@ -149,7 +106,6 @@ const EdinaPreview = () => {
           </a>
         </div>
       </div>
-      {/* End go_purchase */}
 
       <div className="copyright">
         <p>
@@ -159,12 +115,11 @@ const EdinaPreview = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            elite-themes24.
-          </a>
+            elite-themes24
+          </a>{' '}
           All Rights Reserved.
         </p>
       </div>
-      {/* End .copyright */}
     </div>
   );
 };

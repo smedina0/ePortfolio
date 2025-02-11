@@ -49,39 +49,37 @@ const Blog = () => {
     <>
       <div className="news_inner my_carousel" id="modal">
         <ul>
-          <Slider {...settings}>
-            {blogsData.map((item) => (
-              <li
-                data-aos="fade-right"
-                data-aos-duration="1200"
-                data-aos-delay="150"
-                key={item.id}
-              >
-                <div className="list_inner">
-                  <div className="image" onClick={() => handleModle(item?.id)}>
-                    <div
-                      className="main"
-                      style={{
-                        backgroundImage: `url(${item.img})`,
-                      }}
-                    ></div>
-                  </div>
-                  {/* End image */}
-
-                  <div className="news_details">
-                    <span>
-                      {item.date} <a href="#">{item.meta}</a>
-                    </span>
-                    <h3 className="title" onClick={() => handleModle(item?.id)}>
-                      {item.title}
-                    </h3>
-                  </div>
-                  {/* End details */}
+          {blogsData.map((item) => (
+            <li
+              data-aos="fade-right"
+              data-aos-duration="1200"
+              data-aos-delay="150"
+              key={item.id}
+            >
+              <div className="list_inner">
+                <div className="image" onClick={() => handleModle(item?.id)}>
+                  <div
+                    className="main"
+                    style={{
+                      backgroundImage: `url(${item.img})`,
+                    }}
+                  ></div>
                 </div>
-                {/* End list inner */}
-              </li>
-            ))}
-          </Slider>
+                {/* End image */}
+
+                <div className="news_details">
+                  <span>
+                    {item.date} <a href="#">{item.meta}</a>
+                  </span>
+                  <h3 className="title" onClick={() => handleModle(item?.id)}>
+                    {item.title}
+                  </h3>
+                </div>
+                {/* End details */}
+              </div>
+              {/* End list inner */}
+            </li>
+          ))}
         </ul>
 
         {/* Start Modal  */}
