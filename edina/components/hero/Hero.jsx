@@ -2,7 +2,7 @@ import React from 'react';
 import Social from '../Social';
 import Image from 'next/image';
 import shapeImage from '../../public/img/hero/1.jpg';
-import heroImage from '../../public/img/hero/2.jpg';
+import heroImage from '../../public/img/hero/sm.jpg';
 
 const heroContent = {
   shapeImage: shapeImage,
@@ -19,10 +19,14 @@ const Hero = () => {
           <Image src={heroContent.heroImage} alt="brand" />
         </div>
         <div className="extra">
-          <h5 className="hello">Hello, I am {heroContent.name}</h5>
-          <h1 className="name">
-            <span className="typer-toper">{heroContent.description}</span>
+          <h1 class="accessible-text">
+            Steven Medina - Accessibility Specialist at CUNY SPS
           </h1>
+          <p className="hello">Hello, I am {heroContent.name}</p>
+          <p className="name">
+            <span className="typer-toper">{heroContent.description}</span>
+          </p>
+          <p>Master's Candidate in Disability Studies | Advocating for Digital Accessibility</p>
           <div className="social">
             <Social />
           </div>

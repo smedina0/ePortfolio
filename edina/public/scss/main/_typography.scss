@@ -283,6 +283,15 @@ pre code {
   margin-bottom: 1000px;
 }
 
+.accessible-text{
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; 
+  width: 1px;
+}
+
 /*------------------------------------------------------------------*/
 /*	FORM ELEMENTS
 /*------------------------------------------------------------------*/

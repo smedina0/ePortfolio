@@ -1,7 +1,7 @@
-import Link from "next/link";
-import Image from "next/image";
-import logo from "../../public/img/logo/dark.png";
-import logo2 from "../../public/img/logo/light.png";
+import Link from 'next/link';
+import Image from 'next/image';
+import logo from '../../public/img/logo/dark.png';
+import logo2 from '../../public/img/logo/light.png';
 
 const HeaderMobile = () => {
   return (
@@ -9,17 +9,10 @@ const HeaderMobile = () => {
       <div className="logo">
         <Link href="/">
           <Image
-            width={92}
-            height={37}
+            width={200}
+            height={200}
             className="logo_light"
             src={logo}
-            alt="brand"
-          />
-          <Image
-            width={92}
-            height={37}
-            className="logo_dark"
-            src={logo2}
             alt="brand"
           />
         </Link>

@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react';
+// EdinaHomeSidebar.jsx
+import React, { useEffect, useState } from 'react';
 import Sidebar from '../../header/Sidebar';
 import Hero from '../../hero/Hero';
 import About from '../../about/About';
@@ -12,25 +13,40 @@ import Map from '../../Map';
 import HeaderMobile from '../../header/HeaderMobile';
 
 const EdinaHomeSidebar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   useEffect(() => {
     document.querySelector('body').classList.remove('rtl');
   }, []);
+
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+    
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [isMenuOpen]);
 
   return (
     <div className="home-light edina_tm_mainpart">
       <header className="header-area">
         <div className="header-inner">
-          <HeaderMobile />
+          <HeaderMobile setMenuOpen={setIsMenuOpen} />
         </div>
       </header>
-      {/* End mobile-header */}
 
-      <Sidebar />
-      {/* End Header */}
+      <div 
+        className={`menu-overlay ${isMenuOpen ? 'active' : ''}`} 
+        onClick={() => setIsMenuOpen(false)}
+      />
+
+      <Sidebar isOpen={isMenuOpen} setIsOpen={setIsMenuOpen} />
       <Hero />
-      {/* End Hero */}
       <About />
-      {/* End About */}
       <div className="edina_tm_services" id="service">
         <div className="container">
           <div className="edina_tm_title">
@@ -40,11 +56,9 @@ const EdinaHomeSidebar = () => {
               ipsum sit nibh amet egestas tellus.
             </p>
           </div>
-          {/* End edian_tm_title */}
           <Service />
         </div>
       </div>
-      {/* End Services */}
 
       <div className="edina_tm_portfolio" id="portfolio">
         <div className="container">
@@ -55,11 +69,9 @@ const EdinaHomeSidebar = () => {
               ipsum sit nibh amet egestas tellus.
             </p>
           </div>
-          {/* End edian_tm_title */}
           <Portfolio />
         </div>
       </div>
-      {/* End Portfolio */}
 
       <div className="edina_tm_testimonials" id="testimonial">
         <div className="container">
@@ -70,15 +82,13 @@ const EdinaHomeSidebar = () => {
               ipsum sit nibh amet egestas tellus.
             </p>
           </div>
-          {/* End edian_tm_title */}
-          <div className="list ">
+          <div className="list">
             <ul>
               <Testimonial />
             </ul>
           </div>
         </div>
       </div>
-      {/* End Testimonial */}
 
       <div className="edina_tm_news" id="blog">
         <div className="container">
@@ -89,11 +99,9 @@ const EdinaHomeSidebar = () => {
               ipsum sit nibh amet egestas tellus.
             </p>
           </div>
-          {/* End edian_tm_title */}
           <Blog />
         </div>
       </div>
-      {/* End Blog */}
 
       <div className="edina_tm_contact" id="contact">
         <div className="container">
@@ -107,7 +115,6 @@ const EdinaHomeSidebar = () => {
           <div className="extra_info">
             <Address />
           </div>
-          {/* End Address Info */}
           <div className="mainpart">
             <div
               className="left"
@@ -122,11 +129,9 @@ const EdinaHomeSidebar = () => {
                   <span> design work or partnerships.</span>
                 </p>
               </div>
-              {/* End title */}
               <div className="fields">
                 <Contact />
               </div>
-              {/* End Contact Form */}
             </div>
             <div
               className="right"
@@ -136,11 +141,9 @@ const EdinaHomeSidebar = () => {
             >
               <Map />
             </div>
-            {/* End Map */}
           </div>
         </div>
       </div>
-      {/* /CONTACT */}
     </div>
   );
 };
