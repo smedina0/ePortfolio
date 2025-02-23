@@ -1,27 +1,35 @@
-import React, { useState, useEffect, useRef, useCallback } from "react";
-import Link from "next/link";
-import sidebarContent from "../../data/sidebar";
-import Image from "next/image";
-import logo from "../../public/img/logo/dark.png";
-import logo2 from "../../public/img/logo/light.png";
+import React, { useState, useEffect, useRef, useCallback } from 'react';
+import Link from 'next/link';
+import sidebarContent from '../../data/sidebar';
+import Image from 'next/image';
+import logo from '../../public/img/logo/dark.png';
+import logo2 from '../../public/img/logo/light.png';
 
 // sidebar footer bottom content
 const sidebarFooterContent = {
-  name: "Steven Medina",
-  email: "steven.medina93@sps.cuny.edu",
-  emailRef: "mailto:steven.medina93@sps.cuny.edu",
+  name: 'Steven Medina',
+  email: 'steven.medina93@sps.cuny.edu',
+  emailRef: 'mailto:steven.medina93@sps.cuny.edu',
 };
 
 const Sidebar = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('');
-  
+
   // Refs for focus management
   const toggleButtonRef = useRef(null);
   const sidebarRef = useRef(null);
   const firstLinkRef = useRef(null);
   const lastLinkRef = useRef(null);
+
+  // Memoize handleClose to prevent unnecessary re-renders
+  const handleClose = useCallback(() => {
+    if (isMobile) {
+      setIsOpen(false);
+      toggleButtonRef.current?.focus();
+    }
+  }, [isMobile]);
 
   useEffect(() => {
     // Check viewport width and set mobile state
@@ -42,8 +50,13 @@ const Sidebar = () => {
     // Function to handle scroll and update active section
     const handleScroll = () => {
       const sections = [
-        'home', 'about', 'service', 'portfolio', 
-        'testimonial', 'blog', 'contact'
+        'home',
+        'about',
+        'service',
+        'portfolio',
+        'testimonial',
+        'blog',
+        'contact',
       ];
 
       for (const sectionId of sections) {
@@ -80,9 +93,12 @@ const Sidebar = () => {
         if (e.shiftKey && document.activeElement === toggleButtonRef.current) {
           e.preventDefault();
           lastLinkRef.current?.focus();
-        } 
+        }
         // Tab from last link
-        else if (!e.shiftKey && document.activeElement === lastLinkRef.current) {
+        else if (
+          !e.shiftKey &&
+          document.activeElement === lastLinkRef.current
+        ) {
           e.preventDefault();
           toggleButtonRef.current?.focus();
         }
@@ -99,32 +115,27 @@ const Sidebar = () => {
     return () => {
       document.removeEventListener('keydown', handleKeyDown);
     };
-  }, [isMobile, isOpen]);
+  }, [isMobile, isOpen, handleClose]);
 
   const handleToggle = () => {
     setIsOpen(!isOpen);
-  };
-
-  const handleClose = () => {
-    if (isMobile) {
-      setIsOpen(false);
-      toggleButtonRef.current?.focus();
-    }
   };
 
   return (
     <>
       {isMobile && (
         <div className="mob-header">
-          <button 
+          <button
             ref={toggleButtonRef}
-            className="toggler-menu" 
+            className="toggler-menu"
             onClick={handleToggle}
             aria-expanded={isOpen}
             aria-controls="sidebar-menu"
-            aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
+            aria-label={
+              isOpen ? 'Close navigation menu' : 'Open navigation menu'
+            }
           >
-            <div className={isOpen ? "active" : ""}>
+            <div className={isOpen ? 'active' : ''}>
               <span></span>
               <span></span>
               <span></span>
@@ -166,14 +177,18 @@ const Sidebar = () => {
                       <div className="list_inner">
                         <Link
                           ref={
-                            i === 0 
-                              ? firstLinkRef 
-                              : i === sidebarContent.length - 1 
-                              ? lastLinkRef 
+                            i === 0
+                              ? firstLinkRef
+                              : i === sidebarContent.length - 1
+                              ? lastLinkRef
                               : null
                           }
                           href={val.itemRoute}
-                          className={activeSection === val.itemRoute.replace('#', '') ? 'active' : val.activeClass}
+                          className={
+                            activeSection === val.itemRoute.replace('#', '')
+                              ? 'active'
+                              : val.activeClass
+                          }
                           onClick={isMobile ? handleClose : undefined}
                         >
                           <Image
@@ -199,7 +214,7 @@ const Sidebar = () => {
                   <div
                     className="main"
                     style={{
-                      backgroundImage: "url(img/about/avatar.jpg)",
+                      backgroundImage: 'url(img/about/avatar.jpg)',
                     }}
                   ></div>
                 </div>
