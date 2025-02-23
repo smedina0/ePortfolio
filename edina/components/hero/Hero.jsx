@@ -26,7 +26,9 @@ const Hero = () => {
           <p className="name">
             <span className="typer-toper">{heroContent.description}</span>
           </p>
-          <p>Master's Candidate in Disability Studies | Advocating for Digital Accessibility</p>
+          <p>
+            Disability Studies Scholar | Advocating for Digital Accessibility
+          </p>
           <div className="social">
             <Social />
           </div>
