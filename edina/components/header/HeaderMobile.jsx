@@ -7,7 +7,7 @@ const HeaderMobile = () => {
   return (
     <>
       <div className="logo">
-        <Link href="/">
+        <Link href="/home-sidebar#home">
           <Image
             width={200}
             height={200}

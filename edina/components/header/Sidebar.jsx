@@ -196,7 +196,7 @@ const Sidebar = () => {
               >
                 <Image
                   width={200}
-                  height={100}
+                  height={200}
                   className="logo_light"
                   src={logo}
                   alt="brand"
@@ -229,13 +229,13 @@ const Sidebar = () => {
                             handleLinkClick(e, val.itemRoute.replace('#', ''))
                           }
                         >
-                          <Image
+                          {/* <Image
                             width={18}
                             height={18}
                             className="svg custom"
                             src={`img/svg/${val.icon}.svg`}
                             alt="icon"
-                          />
+                          /> */}
                           {val.itemName}
                         </Link>
                       </div>

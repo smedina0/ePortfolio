@@ -31,10 +31,7 @@ const About = () => {
                 Hi, I&apos;m <span>Steven Medina!</span>
               </h3>
               <p>
-                Im a Freelancer Front-end Developer with over 6 years of
-                experience. Im from San Francisco. I code and create web
-                elements for amazing people around the world. I like work with
-                new people.
+                I am an accessibility designer/developer from Harlem, NY. I currently live in NJ, where I moved after graduating from College.
               </p>
             </div>
             <div className="my_skills">
