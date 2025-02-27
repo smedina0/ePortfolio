@@ -157,7 +157,10 @@ const Sidebar = () => {
         >
           <div className="sidebar_inner">
             <div className="logo">
-              <Link href="/" onClick={isMobile ? handleClose : undefined}>
+              <Link
+                href="/home-sidebar#home"
+                onClick={isMobile ? handleClose : undefined}
+              >
                 <Image
                   width={200}
                   height={100}
@@ -208,7 +211,7 @@ const Sidebar = () => {
             )}
             {/* End .menu */}
 
-            <div className="author">
+            {/* <div className="author">
               <div className="inner">
                 <div className="image">
                   <div
@@ -218,15 +221,14 @@ const Sidebar = () => {
                     }}
                   ></div>
                 </div>
-                <div className="short">
+                {/* <div className="short">
                   <h3>{sidebarFooterContent.name}</h3>
                   <a href={sidebarFooterContent.emailRef}>
                     {sidebarFooterContent.email}
                   </a>
-                </div>
+                </div> 
               </div>
-            </div>
-            {/* End author */}
+            </div>*/}
           </div>
         </div>
       )}

@@ -1,10 +1,10 @@
-import { useState } from "react";
-import Skills from "./Skills";
-import Modal from "react-modal";
-import ModalContent from "./modal/ModalContent";
-import Image from "next/image";
+import { useState } from 'react';
+import Skills from './Skills';
+import Modal from 'react-modal';
+import ModalContent from './modal/ModalContent';
+import Image from 'next/image';
 
-Modal.setAppElement("#__next");
+Modal.setAppElement('#__next');
 
 const About = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,7 +17,7 @@ const About = () => {
     <div className="edina_tm_about" id="about">
       <div className="container">
         <div className="about_title">
-          <h3>About Me</h3>
+          <h2>About Me</h2>
         </div>
         <div className="content">
           <div
@@ -27,9 +27,9 @@ const About = () => {
             data-aos-delay="100"
           >
             <div className="info">
-              <h3>
-                Hi, Im <span>Rokers Nelson</span>
-              </h3>
+              <p className="bigText">
+                Hi, I&apos;m <span>Steven Medina!</span>
+              </p>
               <p>
                 Im a Freelancer Front-end Developer with over 6 years of
                 experience. Im from San Francisco. I code and create web
@@ -73,7 +73,7 @@ const About = () => {
               <div
                 className="main"
                 style={{
-                  backgroundImage: "url(img/about/2.jpg)",
+                  backgroundImage: 'url(img/about/2.jpg)',
                 }}
                 data-aos="fade-left"
                 data-aos-duration="1200"
