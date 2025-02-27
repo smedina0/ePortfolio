@@ -27,9 +27,9 @@ const About = () => {
             data-aos-delay="100"
           >
             <div className="info">
-              <p className="bigText">
+              <h3>
                 Hi, I&apos;m <span>Steven Medina!</span>
-              </p>
+              </h3>
               <p>
                 Im a Freelancer Front-end Developer with over 6 years of
                 experience. Im from San Francisco. I code and create web

@@ -12,6 +12,9 @@ const sidebarFooterContent = {
   emailRef: 'mailto:steven.medina93@sps.cuny.edu',
 };
 
+// Adjust this offset value to control how far from the top the section should be positioned
+const OFFSET = 0;
+
 const Sidebar = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
@@ -30,6 +33,35 @@ const Sidebar = () => {
       toggleButtonRef.current?.focus();
     }
   }, [isMobile]);
+
+  // Handle smooth scrolling with offset
+  const handleLinkClick = useCallback(
+    (e, sectionId) => {
+      e.preventDefault();
+
+      const section = document.getElementById(sectionId);
+      if (section) {
+        // Get the section's position relative to the top of the page
+        const sectionTop =
+          section.getBoundingClientRect().top + window.pageYOffset;
+
+        // Scroll to the section with the offset
+        window.scrollTo({
+          top: sectionTop - OFFSET,
+          behavior: 'smooth',
+        });
+
+        // Update active section
+        setActiveSection(sectionId);
+
+        // Close sidebar on mobile
+        if (isMobile) {
+          handleClose();
+        }
+      }
+    },
+    [isMobile, handleClose]
+  );
 
   useEffect(() => {
     // Check viewport width and set mobile state
@@ -63,7 +95,8 @@ const Sidebar = () => {
         const section = document.getElementById(sectionId);
         if (section) {
           const rect = section.getBoundingClientRect();
-          if (rect.top <= 100 && rect.bottom >= 100) {
+          // Use the same OFFSET value here for consistency
+          if (rect.top <= OFFSET && rect.bottom >= OFFSET) {
             setActiveSection(sectionId);
             break;
           }
@@ -159,7 +192,7 @@ const Sidebar = () => {
             <div className="logo">
               <Link
                 href="/home-sidebar#home"
-                onClick={isMobile ? handleClose : undefined}
+                onClick={(e) => handleLinkClick(e, 'home')}
               >
                 <Image
                   width={200}
@@ -192,7 +225,9 @@ const Sidebar = () => {
                               ? 'active'
                               : val.activeClass
                           }
-                          onClick={isMobile ? handleClose : undefined}
+                          onClick={(e) =>
+                            handleLinkClick(e, val.itemRoute.replace('#', ''))
+                          }
                         >
                           <Image
                             width={18}
