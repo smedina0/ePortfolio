@@ -525,6 +525,7 @@ body.dark .loader_line:after {
   display: flex;
   justify-content: center;
   height: auto;
+  padding-top:40px;
   @media screen and (max-width: 1199px) {
     max-width: 140px; // Reduced max-width for mobile
     height: auto;
