@@ -525,7 +525,7 @@ body.dark .loader_line:after {
   display: flex;
   justify-content: center;
   height: auto;
-  padding-top:40px;
+  padding-top: 40px;
   @media screen and (max-width: 1199px) {
     max-width: 140px; // Reduced max-width for mobile
     height: auto;
@@ -992,7 +992,7 @@ body.dark .loader_line:after {
 
 .edina_tm_about .rightpart {
   width: 50%;
-  padding-left: 200px;
+  padding-left: 100px;
 }
 .edina_tm_about .rightpart .image {
   position: relative;
@@ -2587,7 +2587,7 @@ a {
   }
 
   .edina_tm_about .rightpart {
-    padding-left: 120px;
+    padding-left: 80px;
   }
   .edina_tm_about .experience {
     width: 250px;

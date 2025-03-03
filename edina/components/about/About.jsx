@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import Skills from './Skills';
 import Modal from 'react-modal';
 import ModalContent from './modal/ModalContent';
 import Image from 'next/image';
@@ -31,20 +30,18 @@ const About = () => {
                 Hi, I&apos;m <span>Steven Medina!</span>
               </h3>
               <p>
-                I am an accessibility designer/developer from Harlem, NY. I currently live in NJ, where I moved after graduating from College.
+                I am an accessibility designer/developer from Harlem, NY. I currently live in NJ, where I moved after graduating from College. I studied neuroscience and theatre as an undergrad at Middlebury College. After that, I purused my Master&apos;s Degree from NYU in Integrated Digital Media - with a thesis on video game accessibility!
+              </p>
+              <br></br>
+              <p>
+                While at NYU, I worked part-time for the NYU Moses Center for Students with Disabilities where I made PDFs accessible and learned about the Web Content Accessibility Guidelines (WCAG). I also worked part time at the City University of New York (CUNY) Central Office. Eventually I switched over from the Moses Center for Students with Disabilities to NYU IT where I worked on ensuring designs were accessible before moving to production.
+              </p>
+              <br></br>
+              <p>
+                After graduating, I worked full time at CUNY for a few years before eventually moving into the corporate world as an accessibility QA Engineer at JPMorgan Chase. After 3 years, I now find myself at Wells Fargo as an accessibility designer and pursing my Master&apos;s in Disability studies from CUNY SPS.
               </p>
             </div>
-            <div className="my_skills">
-              <h3 className="title">What is my skill level?</h3>
-              <p className="desc">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-                ipsum sit nibh amet egestas tellus.
-              </p>
-              <div className="wrapper">
-                <div className="dodo_progress">
-                  <Skills />
-                </div>
-              </div>
+            <div className="my_skills" style={{ marginTop: '10px' }}>
               <div className="edina_tm_button">
                 <button
                   type="submit"
@@ -125,7 +122,6 @@ const About = () => {
       </Modal>
       {/* End  About Details Modal */}
     </div>
-    // /ABOUT
   );
 };
 
