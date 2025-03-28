@@ -30,15 +30,30 @@ const About = () => {
                 Hi, I&apos;m <span>Steven Medina!</span>
               </h3>
               <p>
-                I am an accessibility designer/developer from Harlem, NY. I currently live in NJ, where I moved after graduating from College. I studied neuroscience and theatre as an undergrad at Middlebury College. After that, I purused my Master&apos;s Degree from NYU in Integrated Digital Media - with a thesis on video game accessibility!
+                I am an accessibility designer/developer with Dysgraphia from
+                Harlem, NY. I currently live in NJ, where I moved after
+                graduating from college. I studied neuroscience and theatre as
+                an undergrad at Middlebury College. After that, I purused my
+                Master&apos;s Degree from NYU in Integrated Digital Media - with
+                a thesis on video game accessibility!
               </p>
               <br></br>
               <p>
-                While at NYU, I worked part-time for the NYU Moses Center for Students with Disabilities where I made PDFs accessible and learned about the Web Content Accessibility Guidelines (WCAG). I also worked part time at the City University of New York (CUNY) Central Office. Eventually I switched over from the Moses Center for Students with Disabilities to NYU IT where I worked on ensuring designs were accessible before moving to production.
+                While at NYU, I worked part-time for the NYU Moses Center for
+                Students with Disabilities where I made PDFs accessible and
+                learned about the Web Content Accessibility Guidelines (WCAG). I
+                also worked part time at the City University of New York (CUNY)
+                Central Office. Eventually I switched over from the Moses Center
+                for Students with Disabilities to NYU IT where I worked on
+                ensuring designs were accessible before moving to production.
               </p>
               <br></br>
               <p>
-                After graduating, I worked full time at CUNY for a few years before eventually moving into the corporate world as an accessibility QA Engineer at JPMorgan Chase. After 3 years, I now find myself at Wells Fargo as an accessibility designer and pursing my Master&apos;s in Disability studies from CUNY SPS.
+                After graduating, I worked full time at CUNY for a few years
+                before eventually moving into the corporate world as an
+                accessibility QA Engineer at JPMorgan Chase. After 3 years, I
+                now find myself at Wells Fargo as an accessibility designer and
+                pursing my Master&apos;s in Disability studies from CUNY SPS.
               </p>
             </div>
             <div className="my_skills" style={{ marginTop: '10px' }}>
@@ -60,7 +75,7 @@ const About = () => {
               <Image
                 width={445}
                 height={599}
-                src="/img/thumbs/26-35.jpg"
+                src="/img/thumbs/profpic.jpg"
                 alt="thumb"
               />
 
