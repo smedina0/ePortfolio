@@ -50,7 +50,7 @@ const EdinaHomeSidebar = () => {
       <div className="edina_tm_services" id="service">
         <div className="container">
           <div className="edina_tm_title">
-            <h3>What I Do</h3>
+            <h3>Academic Work</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
               ipsum sit nibh amet egestas tellus.
@@ -63,20 +63,20 @@ const EdinaHomeSidebar = () => {
       <div className="edina_tm_portfolio" id="portfolio">
         <div className="container">
           <div className="edina_tm_title">
-            <h3>Portfolio</h3>
+            <h3>Program Reflection</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
               ipsum sit nibh amet egestas tellus.
             </p>
           </div>
-          <Portfolio />
+          {/* <Portfolio /> */}
         </div>
       </div>
 
       <div className="edina_tm_testimonials" id="testimonial">
         <div className="container">
           <div className="edina_tm_title">
-            <h3>Testimonials</h3>
+            <h3>Unique Section</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
               ipsum sit nibh amet egestas tellus.
@@ -105,15 +105,14 @@ const EdinaHomeSidebar = () => {
 
       <div className="edina_tm_contact" id="contact">
         <div className="container">
-          <div className="edina_tm_title">
+          <div className="">
             <h3>Contact</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-              ipsum sit nibh amet egestas tellus.
+            I am passionate about making digital spaces work for everyone, drawing from my background in disability studies and hands-on tech experience. My goal is to break down digital barriers and create online experiences that are not just accessible, but actually provide great user experiences.
             </p>
           </div>
           <div className="extra_info">
-            <Address />
+            {/* <Address /> */}
           </div>
           <div className="mainpart">
             <div
@@ -124,9 +123,9 @@ const EdinaHomeSidebar = () => {
             >
               <div className="title">
                 <p>
-                  I am always open to discussing product
+                  While I am not open to work, I am open to conversations and networking regarding
                   <br />
-                  <span> design work or partnerships.</span>
+                  <span>accessible design, development, and testing.</span>
                 </p>
               </div>
               <div className="fields">
@@ -139,7 +138,7 @@ const EdinaHomeSidebar = () => {
               data-aos-duration="1200"
               data-aos-delay="400"
             >
-              <Map />
+              {/* <Map /> */}
             </div>
           </div>
         </div>
