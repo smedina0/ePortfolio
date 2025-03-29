@@ -11,7 +11,7 @@ const Experience = () => {
               width={19}
               height={19}
               src="/img/about/briefcase.png"
-              alt="icon"
+              alt=""
             />
             <i className="fa fa-briefcase"></i>
           </div>

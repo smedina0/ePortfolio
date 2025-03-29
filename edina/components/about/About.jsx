@@ -71,35 +71,20 @@ const About = () => {
           {/* End leftpart */}
 
           <div className="rightpart">
+          <div className="image-container">
             <div className="image">
               <Image
+                src="/img/thumbs/profpic.jpg"
+                alt="Profile Picture"
                 width={445}
                 height={599}
-                src="/img/thumbs/profpic.jpg"
-                alt="thumb"
-              />
-
-              <div
-                className="main"
                 style={{
-                  backgroundImage: 'url(img/about/2.jpg)',
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'cover',
                 }}
-                data-aos="fade-left"
-                data-aos-duration="1200"
-                data-aos-delay="200"
-              ></div>
-
-              <div
-                className="experience"
-                data-aos="fade-up"
-                data-aos-duration="1200"
-                data-aos-delay="300"
-              >
-                <div className="info">
-                  <h3>6+ Years</h3>
-                  <span>Of Experiance</span>
-                </div>
-              </div>
+              />
+            </div>
             </div>
           </div>
           {/* End righttpart */}

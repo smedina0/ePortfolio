@@ -22,7 +22,7 @@ const Hero = () => {
           <h1 class="accessible-text">
             Steven Medina - Accessibility Specialist at CUNY SPS
           </h1>
-          <p className="hello">Hello, I am {heroContent.name}</p>
+          <p className="hello">Hello, I am {heroContent.name}. Welcome to my ePortfolio. <br></br>Here, I will share my growth in the field of Disability Studies as a result of my academic program.</p>
           <p className="name">
             <span className="typer-toper">{heroContent.description}</span>
           </p>

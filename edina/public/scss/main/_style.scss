@@ -991,17 +991,34 @@ body.dark .loader_line:after {
 }
 
 .edina_tm_about .rightpart {
-  width: 50%;
-  padding-left: 100px;
+  display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // width: 100%;
 }
 .edina_tm_about .rightpart .image {
   position: relative;
+  width: 100%;
+  max-width: 445px;  /* Match the image's original width */
+  aspect-ratio: 1 / 1.33;  /* Maintain the original aspect ratio */
+  object-fit: cover;
+  border-radius: 10px;
 }
 .edina_tm_about .rightpart .image img {
   position: relative;
   min-width: 100%;
-  opacity: 0;
+  // opacity: 0;
+  
 }
+
+.image-container {
+  position: relative;
+  width: 100%;
+  // padding-top: 133%; /* This creates a responsive aspect ratio (height/width * 100) */
+  border-radius: 10px;
+  overflow: hidden;
+}
+
 .edina_tm_about .rightpart .image .main {
   position: absolute;
   top: 0px;

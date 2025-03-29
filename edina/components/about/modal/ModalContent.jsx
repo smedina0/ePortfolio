@@ -1,8 +1,8 @@
-import React from "react";
-import Achievements from "../Achievements";
-import PersonalInfo from "../PersonalInfo";
-import Experience from "../Experience";
-import Education from "../Education";
+import React from 'react';
+import Achievements from '../Achievements';
+import PersonalInfo from '../PersonalInfo';
+import Experience from '../Experience';
+import Education from '../Education';
 
 const ModalContent = () => {
   return (
@@ -12,8 +12,8 @@ const ModalContent = () => {
           <h3>Personal Info</h3>
           <PersonalInfo />
           <div className="edina_tm_button">
-            <a href="/img/sample.pdf" download className="color">
-              Download CV
+            <a href="/img/Resume.pdf" download className="color">
+              Download Resume
             </a>
           </div>
         </div>
