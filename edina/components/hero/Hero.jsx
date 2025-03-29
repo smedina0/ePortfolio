@@ -29,12 +29,12 @@ const Hero = () => {
           <p>
             Disability Studies Scholar | Advocating for Digital Accessibility
           </p>
-          <div className="social">
+          {/* <div className="social">
             <Social />
-          </div>
+          </div> */}
           <div className="edina_tm_button">
-            <a href="/img/sample.pdf" download className="color">
-              Download CV
+            <a href="/img/resume.pdf" download className="color">
+              Download Resume
             </a>
           </div>
         </div>

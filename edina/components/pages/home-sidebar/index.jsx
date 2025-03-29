@@ -90,18 +90,18 @@ const EdinaHomeSidebar = () => {
         </div>
       </div>
 
-      <div className="edina_tm_news" id="blog">
+      {/* <div className="edina_tm_news" id="blog">
         <div className="container">
           <div className="edina_tm_title">
-            <h3>Blog</h3>
+           
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
               ipsum sit nibh amet egestas tellus.
-            </p>
+            </p> 
           </div>
-          <Blog />
+          
         </div>
-      </div>
+      </div> */}
 
       <div className="edina_tm_contact" id="contact">
         <div className="container">

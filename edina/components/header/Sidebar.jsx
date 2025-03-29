@@ -84,9 +84,9 @@ const Sidebar = () => {
       const sections = [
         'home',
         'about',
-        'service',
-        'portfolio',
-        'testimonial',
+        'Academic Work',
+        'Program Reflection',
+        'Unique Section',
         'blog',
         'contact',
       ];
