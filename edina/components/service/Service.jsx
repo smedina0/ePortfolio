@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import Modal from "react-modal";
-import Tilt from "react-parallax-tilt";
-import servicesData from "../../data/services";
-import Image from "next/image";
+import React, { useState } from 'react';
+import Modal from 'react-modal';
+import Tilt from 'react-parallax-tilt';
+import servicesData from '../../data/services';
+import Image from 'next/image';
 
-Modal.setAppElement("#__next");
+Modal.setAppElement('#__next');
 
 const Service = () => {
   const [singleData, setSingleData] = useState({});
@@ -28,18 +28,24 @@ const Service = () => {
             <Tilt>
               <div className="list_inner" onClick={() => handleModle(item?.id)}>
                 <div className="hover">
-                  <Image
-                    width={50}
-                    height={50}
-                    className="svg custom"
-                    src={item.imgIcon}
-                    alt="icon"
-                  />
                   <div className="service_title">
                     <h3>{item.title}</h3>
                   </div>
-                  <div className="learn_more">
-                    Learn More<span></span>
+                  <div className="">
+                    <button
+                      type="button"
+                      className="learnMoreButton"
+                      aria-label={`Learn more about ${item.title}`}
+                      onClick={() => handleModle(item?.id)}
+                      onKeyDown={(e) => {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                          e.preventDefault();
+                          handleModle(item?.id);
+                        }
+                      }}
+                    >
+                      Learn More <span></span>
+                    </button>
                   </div>
                 </div>
               </div>

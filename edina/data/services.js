@@ -1,14 +1,14 @@
 module.exports = [
   {
     id: 1,
-    imgIcon: "/img/svg/1.svg",
+    // imgIcon: "/img/svg/1.svg",
     title: (
       <>
-        Motion & Web <br /> Graphy
+        Disability Law <br /> & Policy
       </>
     ),
     popupImg: "/img/service/1.jpg",
-    popupTitle: `Motion & Web Graphy Breakdown In Cinema 4D`,
+    popupTitle: `Disability Law & Policy`,
     firstDescriptionText: (
       <>
         <p>
@@ -65,7 +65,7 @@ module.exports = [
     imgIcon: "/img/svg/2.svg",
     title: (
       <>
-        Ui/Ux <br /> Consultancy
+        Embodiment & Disability
       </>
     ),
     popupImg: "/img/service/2.jpg",
@@ -121,7 +121,7 @@ module.exports = [
     imgIcon: "/img/svg/3.svg",
     title: (
       <>
-        Branding & <br /> Design
+        Disability Studies & the Humanities
       </>
     ),
     popupImg: "/img/service/3.jpg",
@@ -179,7 +179,7 @@ module.exports = [
     imgIcon: "/img/svg/4.svg",
     title: (
       <>
-        Mobile App <br /> Design
+        Aging & <br /> Disability
       </>
     ),
     popupImg: "/img/service/4.jpg",

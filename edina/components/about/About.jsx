@@ -71,20 +71,20 @@ const About = () => {
           {/* End leftpart */}
 
           <div className="rightpart">
-          <div className="image-container">
-            <div className="image">
-              <Image
-                src="/img/thumbs/profpic.jpg"
-                alt="Profile Picture"
-                width={445}
-                height={599}
-                style={{
-                  width: '100%',
-                  height: '100%',
-                  objectFit: 'cover',
-                }}
-              />
-            </div>
+            <div className="image-container">
+              <div className="image">
+                <Image
+                  src="/img/thumbs/profpic.jpg"
+                  alt="Profile Picture"
+                  width={445}
+                  height={599}
+                  style={{
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover',
+                  }}
+                />
+              </div>
             </div>
           </div>
           {/* End righttpart */}
