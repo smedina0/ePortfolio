@@ -84,7 +84,22 @@ const EdinaHomeSidebar = () => {
           <br></br>
           <p className="largerText">
             I have been in the field of digital accessibility for over 6 years.
-            In my time as an accessibility professional,I have learned the ins and outs of document accessibility (Microsoft Office/Adobe Suite), annotations in design accessibility, accessibility quality assurance/accessibility testing, and accessibility development. In my time in digital accessibility, I learned the "trade" of digital accessibility, but I realized that I was lacking in terms of the social, political, administrative, and legal aspects of disability. This lack of knowledge was disappointing to me. Reflecting on this program, I am very grateful for what I have learned and the knowledge, resources, and conversations this program has provided me with. I have taken what I learned in this course and have applied it to my work, my conversations, and my advocacy for people with disabilities. I am much more confident when talking about usability and when explaining the importance of what I do with people in related fields (designers/developers/testers/product owners/etc).
+            In my time as an accessibility professional,I have learned the ins
+            and outs of document accessibility (Microsoft Office/Adobe Suite),
+            annotations in design accessibility, accessibility quality
+            assurance/accessibility testing, and accessibility development. In
+            my time in digital accessibility, I learned the &quot;trade&quot; of
+            digital accessibility, but I realized that I was lacking in terms of
+            the social, political, administrative, and legal aspects of
+            disability. This lack of knowledge was disappointing to me.
+            Reflecting on this program, I am very grateful for what I have
+            learned and the knowledge, resources, and conversations this program
+            has provided me with. I have taken what I learned in this course and
+            have applied it to my work, my conversations, and my advocacy for
+            people with disabilities. I am much more confident when talking
+            about usability and when explaining the importance of what I do with
+            people in related fields (designers/developers/testers/product
+            owners/etc).
           </p>
           {/* <Portfolio /> */}
         </div>
