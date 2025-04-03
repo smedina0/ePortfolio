@@ -51,11 +51,12 @@ const EdinaHomeSidebar = () => {
         <div className="container">
           <div className="edina_tm_title">
             <h3>Academic Work</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-              ipsum sit nibh amet egestas tellus.
-            </p>
           </div>
+          <p>
+            While I enjoyed all of the courses in the Disability Studies
+            program, here are a few of my favorites:
+          </p>
+
           <Service />
         </div>
       </div>
@@ -109,11 +110,15 @@ const EdinaHomeSidebar = () => {
         <div className="container">
           <div className="edina_tm_title">
             <h3>Unique Section</h3>
+            </div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-              ipsum sit nibh amet egestas tellus.
+              For the unique portion of my e-portfolio, I have decided to dedicate this section to digital accessibility.
             </p>
-          </div>
+
+            <h4>
+              What is digital accessibility?
+            </h4>
+          
           <div className="list">
             <ul>
               <Testimonial />
