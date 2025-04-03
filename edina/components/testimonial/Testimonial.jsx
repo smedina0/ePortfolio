@@ -6,7 +6,7 @@ export default function Testimonial() {
   return (
     <div className="testimonial-grid">
       {testimonialContent.map((val, i) => (
-        <li
+        <div
           key={i}
           data-aos="fade-right"
           data-aos-duration="1200"
@@ -26,14 +26,14 @@ export default function Testimonial() {
                 {/* End image */}
 
                 <div className="short">
-                  <h3>{val.name}</h3>
+                  <h4>{val.name}</h4>
                   <span>{val.designation}</span>
                 </div>
                 {/* End short description */}
               </div>
               {/* End author */}
 
-              <div className="icon">
+              {/* <div className="icon">
                 <Image
                   width={60}
                   height={60}
@@ -41,7 +41,7 @@ export default function Testimonial() {
                   src="/img/svg/quote.svg"
                   alt="quote"
                 />
-              </div>
+              </div> */}
               {/* End right quote icon */}
             </div>
 
@@ -50,7 +50,7 @@ export default function Testimonial() {
             </div>
             {/* End description */}
           </div>
-        </li>
+        </div>
       ))}
     </div>
   );

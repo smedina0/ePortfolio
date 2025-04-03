@@ -28,7 +28,7 @@ module.exports = [
     ),
     serviceListDescriptions: (
       <>
-        <h3>What Is Motion & Web?</h3>
+        <h3>What Is Disability Law & Policy?</h3>
         <p>
           Nullam blandit constituto eam ne, te nam ignota vituper.atoribus.
           Malis cetero quem saipe, prou thendrerit voluptaria.
@@ -90,7 +90,7 @@ module.exports = [
     ),
     serviceListDescriptions: (
       <>
-        <h3>What Is Ui/Ux?</h3>
+        <h3>What Is Embodiment & Disability?</h3>
         <p>
           Nullam blandit constituto eam ne, te nam ignota vituper.atoribus.
           Malis cetero quem saipe, prou thendrerit voluptaria.
@@ -145,7 +145,7 @@ module.exports = [
     ),
     serviceListDescriptions: (
       <>
-        <h3>What Is Branding & Design?</h3>
+        <h3>What is Disability Studies & the Humanities?</h3>
         <p>
           Nullam blandit constituto eam ne, te nam ignota vituper.atoribus.
           Malis cetero quem saipe, prou thendrerit voluptaria.
@@ -203,7 +203,7 @@ module.exports = [
     ),
     serviceListDescriptions: (
       <>
-        <h3>What Is Mobile App Design?</h3>
+        <h3>What Is Aging & Disability?</h3>
         <p>
           Nullam blandit constituto eam ne, te nam ignota vituper.atoribus.
           Malis cetero quem saipe, prou thendrerit voluptaria.

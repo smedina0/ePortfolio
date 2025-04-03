@@ -110,19 +110,14 @@ const EdinaHomeSidebar = () => {
         <div className="container">
           <div className="edina_tm_title">
             <h3>Unique Section</h3>
-            </div>
-            <p>
-              For the unique portion of my e-portfolio, I have decided to dedicate this section to digital accessibility.
-            </p>
+          </div>
+          <p>
+            For the unique portion of my e-portfolio, I have decided to dedicate
+            this section to digital accessibility.
+          </p>
 
-            <h4>
-              What is digital accessibility?
-            </h4>
-          
-          <div className="list">
-            <ul>
-              <Testimonial />
-            </ul>
+          <div className="">
+            <Testimonial />
           </div>
         </div>
       </div>
