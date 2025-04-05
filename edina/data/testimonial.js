@@ -1,7 +1,7 @@
 module.exports = [
   {
     img: "",
-    desc: `Hi, I’m Alvara Atkins and I am designer &amp; developer who dream making the world better place by products. I am also very active for international clients.`,
+    desc: `Digital accesibility is the idea of designing, developing, testing and maintaining products and software so that they are usable for everyone, with an extra emphasis on being usable by people with disabilities. The pillars of digital accessibility are perceivability, operability, understandable, and robust (POUR).`,
     name: "What is Digital Accessibility?",
     designation: "",
     delayAnimation: "",
