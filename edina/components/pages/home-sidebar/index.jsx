@@ -113,8 +113,9 @@ const EdinaHomeSidebar = () => {
           </div>
           <p>
             For the unique portion of my e-portfolio, I have decided to dedicate
-            this section to digital accessibility.
+            this section to digital accessibility. I would like to share a high level description of digital accessibility and the work that I do.
           </p>
+          <br></br>
 
           <div className="">
             <Testimonial />

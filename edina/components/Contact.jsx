@@ -1,7 +1,7 @@
-import React, { useRef } from "react";
-import emailjs from "@emailjs/browser";
-import { toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
   const form = useRef();
@@ -10,16 +10,16 @@ const Contact = () => {
     e.preventDefault();
     emailjs
       .sendForm(
-        "service_n4mkhz9",
-        "template_ugoztxr",
+        'service_d12j594',
+        'template_wzaoo2p',
         form.current,
-        "user_vYmDSd9PwIuRXUQEDjYwN"
+        'nwhutFS_XIYD8vYTU'
       )
       .then(
         (result) => {
           console.log(result);
-          toast.success("Message Sent Successfully!", {
-            position: "top-right",
+          toast.success('Message Sent Successfully!', {
+            position: 'top-right',
             autoClose: 2000,
             hideProgressBar: false,
             closeOnClick: true,
@@ -27,11 +27,11 @@ const Contact = () => {
             draggable: true,
             progress: undefined,
           });
-          document.getElementById("myForm").reset();
+          document.getElementById('myForm').reset();
         },
         (error) => {
-          toast.error("Ops Message Not Sent!", {
-            position: "top-right",
+          toast.error('Ops Message Not Sent!', {
+            position: 'top-right',
             autoClose: 2000,
             hideProgressBar: false,
             closeOnClick: true,
