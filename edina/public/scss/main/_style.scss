@@ -1955,6 +1955,11 @@ dt {
   font-size: 22px;
 }
 
+.unstyledList {
+  list-style-type: disc;
+  list-style: circle;
+}
+
 /*---------------------------------------------------*/
 /*	09) EDINA NEWS
 /*---------------------------------------------------*/
@@ -3492,4 +3497,29 @@ a {
 
 .theme-dark .fixed-header .edina_tm_sidebar {
   background: #000;
+}
+
+.unstyledList {
+  list-style-type: disc !important;
+  margin: 0 0 0 30px !important;
+  display: block !important;
+}
+
+.unstyledList li {
+  width: auto !important;
+  float: none !important;
+  clear: both !important;
+  margin-bottom: 8px !important;
+  padding-left: 0 !important;
+  position: static !important;
+}
+
+.unstyledList li .list_inner {
+  padding: 0 !important;
+  height: auto !important;
+  width: auto !important;
+  float: none !important;
+  position: static !important;
+  background-color: transparent !important;
+  border-radius: 0 !important;
 }

@@ -50,13 +50,102 @@ const EdinaHomeSidebar = () => {
       <div className="edina_tm_services" id="service">
         <div className="container">
           <div className="edina_tm_title">
-            <h3>Academic Work</h3>
+            <h2>Academic Work</h2>
           </div>
+         
+          <h3>Masters of Arts in Disbaility Studies</h3>
+          <br></br>
+          <h4>Mission</h4>
+          <p>The mission of the Disability Studies Program is to develop leaders who will improve the lives of people with disabilities. In a welcoming and hospitable environment, students are taught to think about disability in a social, cultural and political context, and to conduct research, apply theory, and advocate for inclusion, access and opportunities for disabled people.</p>
+          <br></br>
+          <h4>Program Learning Outcomes</h4>
+          <p>Graduates of the MA in Disability Studies will be able to:</p>
+          <ul class="unstyledList">
+            <li>
+            Analyze disability experience, both individual and societal, using a multidisciplinary approach.
+            </li>
+            <li>
+            Critique representations and expression of disability in the media, creative arts and culture.
+            </li>
+            <li>
+            Apply critical thinking skills to examine issues related to disability policy and law.
+            </li>
+            <li>
+            Demonstrate research skills for ongoing reading/research in disability studies
+            </li>
+            <li>
+            Advocate for improved quality of life and social justice for people with disabilities
+            </li>
+          </ul>
+          <br></br>
+          <h4>The Program</h4>
           <p>
-            While I enjoyed all of the courses in the Disability Studies
-            program, here are a few of my favorites:
+          The MA in Disability Studies, the first stand-alone program of its kind in the country, offers students a unique opportunity to examine disability from an interdisciplinary perspective, including the social sciences, humanities, science, social policy and the law. The program utilizes a ‘person centered’ approach to the study of disability, incorporating overlapping lenses through which students realize disability as a social construction as opposed to a deficit inherent in an individual.
+<br></br>
+<br></br>
+The degree provides students with the intellectual and methodological tools to assume greater responsibility and leadership in the future as service providers, advocates, researchers, or policy makers. Students study with renowned faculty from CUNY as well as expert practitioners from public and private organizations.
+<br></br>
+<br></br>
+Graduates of the Master&apos;s Degree in Disability Studies program are reflective, knowledgeable and flexible professionals, researchers, educators and advocates in their chosen disability-related field. Graduates think, write and speak critically about:
+<br></br>
+<ul class="unstyledList">
+            <li>
+            Disability experience, both individual and social;
+            </li>
+            <li>
+            Disability and the arts/creativity in disability culture;
+            </li>
+            <li>
+            Improvement in quality of life and justice for people with disabilities;
+            </li>
+            <li>
+            Field based applications to disability-related practice; and
+            </li>
+            <li>
+            Research for ongoing learning and writing in disability studies.
+            </li>
+          </ul>
           </p>
-
+          <br></br>
+          <h5>Required Courses</h5>
+          <ul class="unstyledList">
+            <li>
+            DSAB 601: Psychosocial, Cultural and Political Aspects of Disability
+            </li>
+            <li>
+            DSAB 602: Embodiment and Disability
+            </li>
+            <li>
+            DSAB 605: Disability and Diversity
+            </li>
+            <li>
+            DSAB 611: Qualitative Research Methods
+            </li>
+            <li>
+            DSAB 626: Disability Law and Policy
+            </li>
+            <li>
+            DSAB 699: Capstone Course
+            </li>
+          </ul>
+        <br></br>
+        <h5>Disability Studies Elective Courses</h5>
+        <ul class="unstyledList">
+            <li>DSAB 603 - Disability and the Family Life Cycle</li>
+<li>DSAB 620 - Disability History</li>
+<li>DSAB 621 - Disability Studies and the Humanities</li>
+<li>DSAB 622 - Disability in Mass Media</li>
+<li>DSAB 623 - Disability Studies and the Health Professions</li>
+<li>DSAB 624 - Leadership in Disability Service Agencies</li>
+<li>DSAB 625 - Grantwriting for Disability Programs</li>
+<li>DSAB 627 - Disability and Narrative</li>
+<li>DSAB 628 - Disability Studies in Education</li>
+<li>DSAB 629 - Students with Disabilities in Higher Education</li>
+<li>DSAB 630 - Aging and Disability: Multiple Perspectives and Emerging Issues</li>
+<li>DSAB 649 - Independent Study</li>
+<li>DSAB 651 - Special Topics Course</li>
+<li>DSAB 655 - Reel to Real: Psychiatry at the Cinema</li>
+          </ul>
           <Service />
         </div>
       </div>
@@ -113,7 +202,8 @@ const EdinaHomeSidebar = () => {
           </div>
           <p>
             For the unique portion of my e-portfolio, I have decided to dedicate
-            this section to digital accessibility. I would like to share a high level description of digital accessibility and the work that I do.
+            this section to digital accessibility. I would like to share a high
+            level description of digital accessibility and the work that I do.
           </p>
           <br></br>
 
