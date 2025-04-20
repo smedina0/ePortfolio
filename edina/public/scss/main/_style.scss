@@ -3525,3 +3525,18 @@ a {
   background-color: transparent !important;
   border-radius: 0 !important;
 }
+
+.box_inner {
+  position: relative;
+}
+
+.close-modal {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  filter: brightness(0);
+}

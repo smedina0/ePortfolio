@@ -63,27 +63,38 @@ const Service = () => {
         closeTimeoutMS={500}
       >
         <div className="edina_tm_modalbox">
-          <button className="close-modal" onClick={() => setIsOpen(false)}>
+          {/* <button className="close-modal" onClick={() => setIsOpen(false)}>
             <Image
               width={45}
               height={45}
               src="/img/svg/cancel.svg"
-              alt="close icon"
+              alt="close"
             />
-          </button>
+          </button> */}
           {/* End close icon */}
 
           <div className="box_inner">
             <div className="description_wrap ">
+              <button className="close-modal" onClick={() => setIsOpen(false)}>
+                <Image
+                  width={45}
+                  height={45}
+                  src="/img/svg/cancel.svg"
+                  alt="close"
+                />
+              </button>
               <div className="popup_informations">
-                <div className="image">
-                  <div
-                    className="main"
-                    style={{
-                      backgroundImage: `url(${singleData?.popupImg})`,
-                    }}
-                  ></div>
-                </div>
+                {singleData?.popupImg && (
+                  <div className="image">
+                    <div
+                      className="main"
+                      style={{
+                        backgroundImage: `url(${singleData.popupImg})`,
+                      }}
+                    ></div>
+                  </div>
+                )}
+
                 {/* End big image */}
 
                 <div className="description">
