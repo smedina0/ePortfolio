@@ -13,26 +13,38 @@ module.exports = [
       <>
         <h4>Course Description</h4>
         <p>
-          Just because we cant get out and about like we normally would, doesn&apos;t
-          mean we have to taking pictures. There&apos;s still plenty you can do,
-          provided you are prepared to use some imagination. Here are a few
-          ideas to keep you shooting until normal life resumes.
+          This course is an introduction to the emerging multidisciplinary field of Disability
+          Studies. Students will engage disability in a variety of sociopolitical and cultural
+          contexts, including their own personal values and beliefs as they relate to
+          disability and society.
+          <br>
+          </br>
+          Students will be introduced to Disability Studies theory, vocabulary and the
+          models that frame disability discourse. Students will examine Disability Studies
+          as it emerged from the Disability Rights Movement, explore disability in art and
+          literature, investigate and critique current systems of care as they relate to
+          self-determination and inclusion, analyze the role of poverty and work, explore
+          disability as it intersects with race and gender, and learn about disability in a
+          global context.
         </p>
         <h4>Program Goals & Assignments</h4>
-        <p>
-          Mot photographers love to shoot the unusual, and you don&apos;t get much
-          more unusual than These Unprecedented Times. Right now everything
-          counts as out of the ordinary. There are a number of remarkable things
-          about these lockdown days that are worth photographing now we can
-          remember them when it is all over.
-        </p>
+        <ul>
+          <li>Analyze disability experience, both individual and societal, using a multidisciplinary approach.</li>
+          <li>Critique representations and expression of disability in the media, creative arts, and culture.</li>
+          <li>Theoretical models of disability and how each model shapes society’s response in terms of treatment and systems of care.</li>
+          <li>The impact of Social Darwinism and the eugenics movement on disability policy.</li>
+          <li>Disability definitions and demographics.</li>
+          <li>The importance of the principles of social role valorization (normalization), self-determination, inclusion, and independent living for people with disabilities.</li>
+          <li>The link between social policy, poverty, other socioeconomic conditions, and disability.</li>
+          <li>The roots of disability studies in the Disability Rights Movement, political activism, and self-advocacy by people with disabilities.</li>
+          <li>Disability and the humanities, including disability history, disability narratives, and the representation of disability in film, art, literature, and media.</li>
+          <li>Relationship between disability studies, women’s studies, and ethnic studies, and the challenges faced by women and minorities with disabilities.</li>
+          <li>The global context of disability, including issues in zones of conflict and in the developing world.</li>
+        </ul>
+        <br></br>
         <h4>Reflection</h4>
         <p>
-          Mot photographers love to shoot the unusual, and you don&apos;t get much
-          more unusual than These Unprecedented Times. Right now everything
-          counts as out of the ordinary. There are a number of remarkable things
-          about these lockdown days that are worth photographing now we can
-          remember them when it is all over.
+          This course opened the door to disability studies for me. It gave me a solid foundation to understand how disability is shaped by cultural, political, and economic aspects. The course also helped me to begin thinking critically about the intersections of disability with race, gender, and poverty as they related to the disability rights movement.
         </p>
       </>
     ),
@@ -110,26 +122,48 @@ module.exports = [
       <>
         <h4>Course Description</h4>
         <p>
-          Just because we cant get out and about like we normally would, doesn&apos;t
-          mean we have to taking pictures. There&apos;s still plenty you can do,
-          provided you are prepared to use some imagination. Here are a few
-          ideas to keep you shooting until normal life resumes.
+          This course focuses on (1) disability as a category of diversity and identity in comparison with other categories of diversity and identity, such as race, class, gender, sexuality, and ethnicity, as well as on (2) diversity within disability. It also (3) critically examines different strategies that may be used to allow the maximum contribution and choice of people who experience disability.
+
         </p>
         <h4>Program Goals & Assignments</h4>
-        <p>
-          Mot photographers love to shoot the unusual, and you don&apos;t get much
-          more unusual than These Unprecedented Times. Right now everything
-          counts as out of the ordinary. There are a number of remarkable things
-          about these lockdown days that are worth photographing now we can
-          remember them when it is all over.
-        </p>
+        <ul>
+          <li>
+            Identify and describe:
+            <ul>
+              <li>Different definitions or models of impairment and disability and disability identity—such as the medical model, the biopsychosocial model, the British/Marxist/materialist model, the U.S. minority group model, and the postmodern account of disability.</li>
+              <li>Critiques of those definitions and models.</li>
+              <li>Real-world implications of the models.</li>
+            </ul>
+          </li>
+          <li>
+            Articulate different theories used to explain dis/ableism, including:
+            <ul>
+              <li>Individualistic theories that focus on prejudice or stigma as the root of exclusion and disadvantage.</li>
+              <li>Structural accounts of discrimination and oppression, such as Marxist-inspired theories that focus on economic disadvantage and power differences between social groups.</li>
+            </ul>
+          </li>
+          <li>
+            Demonstrate knowledge of diversity within disability created by:
+            <ul>
+              <li>Intersectionality between disability and other socially defined identities (e.g., gender, race, ethnicity, sexual orientation).</li>
+              <li>The nature of impairments (e.g., physical, cognitive, developmental, psychiatric, sensory, visible/invisible).</li>
+            </ul>
+          </li>
+          <li>Articulate and critique different strategies of liberation for increasing the liberty and freedom of people who experience disability, as developed by people who experience disability.</li>
+          <li>Demonstrate an ability to complete a scholarly article or an innovative project on the topic of disability and diversity.</li>
+          <li>Demonstrate an ability to use a critical perspective in discussion on impairment and disability, including:
+            <ul>
+              <li>What are the dominant U.S. and British models of disability?</li>
+              <li>How do they differ from one another?</li>
+              <li>What are Shakespeare and Watson's criticisms of these models?</li>
+              <li>How does Carol Thomas respond to these criticisms?</li>
+            </ul>
+          </li>
+        </ul>
+        <br></br>
         <h4>Reflection</h4>
         <p>
-          Mot photographers love to shoot the unusual, and you don&apos;t get much
-          more unusual than These Unprecedented Times. Right now everything
-          counts as out of the ordinary. There are a number of remarkable things
-          about these lockdown days that are worth photographing now we can
-          remember them when it is all over.
+          This course gave me a a detailed understanding of how to apply the different models of disability studies in various real-world settings among different demographics of people. There were various discussions regarding intersectionality between gender, sexuality, race, ethnicity, and socio-economic status and disability studies.
         </p>
       </>
     ),
@@ -153,26 +187,41 @@ module.exports = [
       <>
         <h4>Course Description</h4>
         <p>
-          Just because we cant get out and about like we normally would, doesn&apos;t
-          mean we have to taking pictures. There&apos;s still plenty you can do,
-          provided you are prepared to use some imagination. Here are a few
-          ideas to keep you shooting until normal life resumes.
+          This course provides an overview of qualitative research methods in the field of disability studies, including ethnography, in-depth interviewing, the use of personal narratives, public documents, material objects, visual and content analysis, and participatory community-based, as well as emancipatory, research. The class focuses on both the practical techniques of qualitative research methodology and current theoretical approaches to the study of disability including critical disability studies and intersectionality. Students will be introduced to qualitative data analysis as well.  The application of these research methodologies to the disability community will be illustrated throughout the course.
+          <br></br>
+          <br></br>
+          This course is an advanced course. Students are expected to have gained basic disability studies concepts and theories as well as disability history, culture, politics, and activism in courses taken prior to this one. The course is developed to inform students about research methods and to assist students in transitioning to capstone programs. The course is not intended as a “how to” guide to developing a research proposal. Rather, students are invited to consider, critically engage, extend, and expand upon a range of possibilities for research in disability studies.
         </p>
         <h4>Program Goals & Assignments</h4>
-        <p>
-          Mot photographers love to shoot the unusual, and you don&apos;t get much
-          more unusual than These Unprecedented Times. Right now everything
-          counts as out of the ordinary. There are a number of remarkable things
-          about these lockdown days that are worth photographing now we can
-          remember them when it is all over.
-        </p>
+        <ul>
+          <li>Contrast and compare quantitative and qualitative research methodologies and describe research scenarios where each would be appropriate.</li>
+          <li>Discuss various methodologies commonly utilized to conduct qualitative research in disability studies and describe various theoretical frameworks used in disability studies.</li>
+          <li>Discuss specific methods used in interpretive studies of disability including content, discursive, and visual analysis as well as different analytical models of disability such as the social model, rehabilitative model, etc.</li>
+          <li>Develop a basic understanding of critical disability studies and intersectionality.</li>
+          <li>Contrast and compare several qualitative research studies.</li>
+          <li>Discuss the ethics of studying with specific communities of people and the special protections required when studying vulnerable populations.</li>
+          <li>Describe situations where approval is needed from the Institutional Review Board and the steps to secure IRB approval.</li>
+          <li>Describe your experience in practicing various qualitative research methods and what you learned.</li>
+          <li>Utilize participant observation and write field notes describing it.</li>
+          <li>Describe the benefits of reflexive journaling while conducting research and issues around the biases we bring to the research.</li>
+          <li>Conduct interviews with individuals and code them for content.</li>
+          <li>Analyze the results of participant observation and interview research.</li>
+          <li>Develop a structured questionnaire.</li>
+          <li>Describe issues related to writing about research.</li>
+          <li>Describe an area for investigation and develop a research question that addresses it.</li>
+          <li>Conduct a literature review and identify gaps in research.</li>
+          <li>Formulate a research proposal and present it to peers.</li>
+        </ul>
+        <br></br>
         <h4>Reflection</h4>
         <p>
-          Mot photographers love to shoot the unusual, and you don&apos;t get much
-          more unusual than These Unprecedented Times. Right now everything
-          counts as out of the ordinary. There are a number of remarkable things
-          about these lockdown days that are worth photographing now we can
-          remember them when it is all over.
+          I found this course to be a valuable exploration of research methods in general but also how they may apply in the specific field of disability studies. I learned of many different research methodologies I had previously never knew of, such as:
+          <ul>
+            <li>Ethnography</li>
+            <li>Participant Observation</li>
+            <li>Interview Analysis</li>
+          </ul>
+          I also appreciate the emphasis on ethical research because it feels as though many people attempt to implement unethical practices, especially when they hope to work with people with disabilities as part of their research.
         </p>
       </>
     ),
@@ -280,26 +329,13 @@ module.exports = [
       <>
         <h4>Course Description</h4>
         <p>
-          Just because we cant get out and about like we normally would, doesn&apos;t
-          mean we have to taking pictures. There&apos;s still plenty you can do,
-          provided you are prepared to use some imagination. Here are a few
-          ideas to keep you shooting until normal life resumes.
+
         </p>
         <h4>Program Goals & Assignments</h4>
-        <p>
-          Mot photographers love to shoot the unusual, and you don&apos;t get much
-          more unusual than These Unprecedented Times. Right now everything
-          counts as out of the ordinary. There are a number of remarkable things
-          about these lockdown days that are worth photographing now we can
-          remember them when it is all over.
-        </p>
+
         <h4>Reflection</h4>
         <p>
-          Mot photographers love to shoot the unusual, and you don&apos;t get much
-          more unusual than These Unprecedented Times. Right now everything
-          counts as out of the ordinary. There are a number of remarkable things
-          about these lockdown days that are worth photographing now we can
-          remember them when it is all over.
+
         </p>
       </>
     ),
@@ -323,26 +359,37 @@ module.exports = [
       <>
         <h4>Course Description</h4>
         <p>
-          Just because we cant get out and about like we normally would, doesn&apos;t
-          mean we have to taking pictures. There&apos;s still plenty you can do,
-          provided you are prepared to use some imagination. Here are a few
-          ideas to keep you shooting until normal life resumes.
+          This course provides an overview of dis/ability within education. We will foreground historical,
+          social, cultural and interpretive understandings of dis/ability, contrasting them with the medical,
+          scientific, and psychological understandings of dis/ability within the context of schooling
+          practices. Using personal narratives, media representations, contemporary research, historical
+          accounts, legal and policy issues, we will analyze competing claims of what dis/ability is. By
+          analyzing multiple and interdisciplinary understandings of dis/ability from a wide variety of
+          sources, we are able to deepen our understanding of dis/ability issues within education, and by
+          extension, society.
         </p>
         <h4>Program Goals & Assignments</h4>
         <p>
-          Mot photographers love to shoot the unusual, and you don&apos;t get much
-          more unusual than These Unprecedented Times. Right now everything
-          counts as out of the ordinary. There are a number of remarkable things
-          about these lockdown days that are worth photographing now we can
-          remember them when it is all over.
+          <ul>
+            <li>Be introduced to, or extend their knowledge of, a dis/ability studies perspective.</li>
+            <li>Explore various ways of understanding dis/ability (medical model, social model, charity model, civil rights model, etc.).</li>
+            <li>Explain the value of understanding school and classroom practices through a DSE (Disability Studies in Education) lens.</li>
+            <li>Examine the history of schooling for students with and without dis/abilities.</li>
+            <li>Describe the differences between traditional special education and a DSE approach to understanding dis/ability.</li>
+            <li>Debate the validity and/or usefulness of dis/ability categories that have been constructed within the education field, such as “learning disabilities” and “emotional disturbance.”</li>
+            <li>Analyze complex issues involved in inclusive education.</li>
+            <li>Discuss negative social perceptions, ableism, stigma, and discrimination experienced by people with dis/abilities within an education context.</li>
+            <li>Explain discrepancies in educational opportunities when dis/ability intersects with race, class, and gender.</li>
+            <li>Evaluate the experience(s) of dis/ability for urban students.</li>
+            <li>Consider schools as work environments for educators with dis/abilities.</li>
+            <li>Discuss ways to advocate for, and with, students with dis/abilities and their parents.</li>
+            <li>Apply critical thinking skills to examine issues related to disability policy and law.</li>
+          </ul>
+
         </p>
         <h4>Reflection</h4>
         <p>
-          Mot photographers love to shoot the unusual, and you don&apos;t get much
-          more unusual than These Unprecedented Times. Right now everything
-          counts as out of the ordinary. There are a number of remarkable things
-          about these lockdown days that are worth photographing now we can
-          remember them when it is all over.
+          I believe that this course allowed me to utilize a disability studies lens to citically analyze education. I am grateful for how we utilized the different models to shape our perspectives and focus on disability in academia. It has given me fuel to be an advocate for inclusive education and has deepened my understanding of how systemic inequities impact both students and educators with disabilities.
         </p>
       </>
     ),
