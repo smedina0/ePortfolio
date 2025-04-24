@@ -10,6 +10,7 @@ const Service = () => {
   const [singleData, setSingleData] = useState({});
   const [isOpen, setIsOpen] = useState(false);
   const scrollRef = useRef(null);
+  const triggerRef = useRef(null);
 
   const handleBServicesData = (id) => {
     const find = servicesData.find((item) => item?.id === id);
@@ -17,7 +18,17 @@ const Service = () => {
     setIsOpen(true);
   };
 
-  const handleModle = (id) => {
+  const closeModal = () => {
+    setIsOpen(false);
+    setTimeout(() => {
+      if (triggerRef.current) {
+        triggerRef.current.focus();
+      }
+    }, 500); // match closeTimeoutMS
+  };
+
+  const handleModle = (id, event) => {
+    if (event?.preventDefault) event.preventDefault();
     handleBServicesData(id);
   };
 
@@ -57,7 +68,12 @@ const Service = () => {
     <div className="service_list">
       <ul>
         {servicesData.map((item) => (
-          <li data-aos="fade-right" data-aos-duration="1200" key={item.id}>
+          <li
+            data-aos="fade-right"
+            data-aos-duration="1200"
+            className="mb-2 sm:mb-4"
+            key={item.id}
+          >
             <Tilt>
               <div className="list_inner" onClick={() => handleModle(item?.id)}>
                 <div className="hover">
@@ -69,10 +85,14 @@ const Service = () => {
                       type="button"
                       className="learnMoreButton"
                       aria-label={`Learn more about ${item.title}`}
-                      onClick={() => handleModle(item?.id)}
+                      onClick={(e) => {
+                        triggerRef.current = e.currentTarget; // 👈 capture trigger
+                        handleModle(item?.id);
+                      }}
                       onKeyDown={(e) => {
                         if (e.key === 'Enter' || e.key === ' ') {
                           e.preventDefault();
+                          triggerRef.current = e.currentTarget; // 👈 capture trigger
                           handleModle(item?.id);
                         }
                       }}
@@ -89,7 +109,7 @@ const Service = () => {
 
       <Modal
         isOpen={isOpen}
-        onRequestClose={() => setIsOpen(false)}
+        onRequestClose={closeModal}
         contentLabel="Service details"
         className="custom-modal"
         overlayClassName="custom-overlay"
@@ -97,7 +117,7 @@ const Service = () => {
       >
         <div className="edina_tm_modalbox">
           <div className="box_inner">
-            <button className="close-modal" onClick={() => setIsOpen(false)}>
+            <button className="close-modal" onClick={closeModal}>
               <Image
                 width={45}
                 height={45}
@@ -118,7 +138,6 @@ const Service = () => {
                     ></div>
                   </div>
                 )}
-
                 <div className="description">
                   <h3>{singleData?.popupTitle}</h3>
                   {singleData?.firstDescriptionText}

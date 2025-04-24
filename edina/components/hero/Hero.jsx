@@ -16,13 +16,20 @@ const Hero = () => {
     <div className="edina_tm_hero" id="home">
       <div className="content">
         <div className="img-shape">
-          <Image src={heroContent.heroImage} alt="brand" />
+          <Image
+            src={heroContent.heroImage}
+            alt="Steven Medina standing in front of Mount Fuji from a distance"
+          />
         </div>
         <div className="extra">
           <h1 class="accessible-text">
             Steven Medina - Accessibility Specialist at CUNY SPS
           </h1>
-          <p className="hello">Hello, I am {heroContent.name}. Welcome to my ePortfolio. <br></br>Here, I will share my growth in the field of Disability Studies as a result of my academic program.</p>
+          <p className="hello">
+            Hello, I am {heroContent.name}. Welcome to my ePortfolio. <br></br>
+            Here, I will share my growth in the field of Disability Studies as a
+            result of my academic program.
+          </p>
           <p className="name">
             <span className="typer-toper">{heroContent.description}</span>
           </p>

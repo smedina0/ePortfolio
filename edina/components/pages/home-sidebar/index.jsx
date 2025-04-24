@@ -11,6 +11,7 @@ import Contact from '../../Contact';
 import Address from '../../Address';
 import Map from '../../Map';
 import HeaderMobile from '../../header/HeaderMobile';
+import Image from 'next/image';
 
 const EdinaHomeSidebar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -53,8 +54,8 @@ const EdinaHomeSidebar = () => {
               <h2>Academic Work</h2>
             </div>
 
-            <h3>Masters of Arts in Disbaility Studies</h3>
-            <br></br>
+            <h3>Masters of Arts in Disability Studies</h3>
+            <br />
             <h4>Mission</h4>
             <p>
               The mission of the Disability Studies Program is to develop
@@ -64,10 +65,10 @@ const EdinaHomeSidebar = () => {
               context, and to conduct research, apply theory, and advocate for
               inclusion, access and opportunities for disabled people.
             </p>
-            <br></br>
+            <br />
             <h4>Program Learning Outcomes</h4>
             <p>Graduates of the MA in Disability Studies will be able to:</p>
-            <ul class="unstyledList">
+            <ul className="unstyledList">
               <li>
                 Analyze disability experience, both individual and societal,
                 using a multidisciplinary approach.
@@ -89,7 +90,7 @@ const EdinaHomeSidebar = () => {
                 people with disabilities
               </li>
             </ul>
-            <br></br>
+            <br />
             <h4>The Program</h4>
             <p>
               The MA in Disability Studies, the first stand-alone program of its
@@ -100,23 +101,22 @@ const EdinaHomeSidebar = () => {
               the study of disability, incorporating overlapping lenses through
               which students realize disability as a social construction as
               opposed to a deficit inherent in an individual.
-              <br></br>
-              <br></br>
+              <br />
+              <br />
               The degree provides students with the intellectual and
               methodological tools to assume greater responsibility and
               leadership in the future as service providers, advocates,
               researchers, or policy makers. Students study with renowned
               faculty from CUNY as well as expert practitioners from public and
               private organizations.
-              <br></br>
-              <br></br>
-              Graduates of the Master&apos;s Degree in Disability Studies
-              program are reflective, knowledgeable and flexible professionals,
-              researchers, educators and advocates in their chosen
-              disability-related field. Graduates think, write and speak
-              critically about:
-              <br></br>
-              <ul class="unstyledList">
+              <br />
+              <br />
+              Graduates of the Master's Degree in Disability Studies program are
+              reflective, knowledgeable and flexible professionals, researchers,
+              educators and advocates in their chosen disability-related field.
+              Graduates think, write and speak critically about:
+              <br />
+              <ul className="unstyledList">
                 <li>Disability experience, both individual and social;</li>
                 <li>
                   Disability and the arts/creativity in disability culture;
@@ -126,7 +126,7 @@ const EdinaHomeSidebar = () => {
                   disabilities;
                 </li>
                 <li>
-                  Field based applications to disability-related practice; and
+                  Field based applications to disability-related practice;
                 </li>
                 <li>
                   Research for ongoing learning and writing in disability
@@ -134,9 +134,9 @@ const EdinaHomeSidebar = () => {
                 </li>
               </ul>
             </p>
-            <br></br>
+            <br />
             <h5>Required Courses</h5>
-            <ul class="unstyledList">
+            <ul className="unstyledList">
               <li>
                 DSAB 601: Psychosocial, Cultural and Political Aspects of
                 Disability
@@ -147,9 +147,9 @@ const EdinaHomeSidebar = () => {
               <li>DSAB 626: Disability Law and Policy</li>
               <li>DSAB 699: Capstone Course</li>
             </ul>
-            <br></br>
+            <br />
             <h5>Disability Studies Elective Courses</h5>
-            <ul class="unstyledList">
+            <ul className="unstyledList">
               <li>DSAB 603 - Disability and the Family Life Cycle</li>
               <li>DSAB 620 - Disability History</li>
               <li>DSAB 621 - Disability Studies and the Humanities</li>
@@ -177,7 +177,7 @@ const EdinaHomeSidebar = () => {
             <div className="edina_tm_title">
               <h3>Program Reflection</h3>
             </div>
-            <p className="">
+            <p>
               My time in this Master&apos;s in Disability Studies program has
               been a profound exploration of disability as a complex experience.
               The program had a particularly curated selection of courses that
@@ -194,17 +194,17 @@ const EdinaHomeSidebar = () => {
               informed, empathetic advocate and professional in the disability
               studies field.
             </p>
-            <br></br>
-            <p className="">
+            <br />
+            <p>
               I have been in the field of digital accessibility for over 6
               years. In my time as an accessibility professional,I have learned
               the ins and outs of document accessibility (Microsoft Office/Adobe
               Suite), annotations in design accessibility, accessibility quality
               assurance/accessibility testing, and accessibility development. In
-              my time in digital accessibility, I learned the &quot;trade&quot;
-              of digital accessibility, but I realized that I was lacking in
-              terms of the social, political, administrative, and legal aspects
-              of disability. This lack of knowledge was disappointing to me.
+              my time in digital accessibility, I learned the "trade" of digital
+              accessibility, but I realized that I was lacking in terms of the
+              social, political, administrative, and legal aspects of
+              disability. This lack of knowledge was disappointing to me.
               Reflecting on this program, I am very grateful for what I have
               learned and the knowledge, resources, and conversations this
               program has provided me with. I have taken what I learned in this
@@ -214,45 +214,55 @@ const EdinaHomeSidebar = () => {
               what I do with people in related fields
               (designers/developers/testers/product owners/etc).
             </p>
-            {/* <Portfolio /> */}
           </div>
         </div>
 
         <div className="edina_tm_testimonials" id="testimonial">
           <div className="container">
-            <div className="edina_tm_title">
-              <h3>Unique Section - Digital Accessibility</h3>
+            <div
+              style={{
+                marginBottom: '20px',
+                zIndex: 2,
+                position: 'relative',
+                fontSize: '24px',
+              }}
+            >
+              <h3>Unique Section – Digital Accessibility</h3>
             </div>
+
+            <div
+              style={{
+                position: 'relative',
+                width: '100%',
+                aspectRatio: '16 / 9',
+                marginBottom: '20px',
+              }}
+            >
+              <Image
+                src="/img/about/digital-accessibility.jpg"
+                alt="A person pressing a keyboard key reading 'Digital Accessibility'"
+                fill
+                style={{ objectFit: 'cover' }}
+              />
+            </div>
+
             <p>
               For the unique portion of my e-portfolio, I have decided to
               dedicate this section to digital accessibility. I would like to
               share a high level description of digital accessibility and the
               work that I do.
             </p>
-            <br></br>
+            <br />
 
-            <div className="">
+            <div>
               <Testimonial />
             </div>
           </div>
         </div>
 
-        {/* <div className="edina_tm_news" id="blog">
-        <div className="container">
-          <div className="edina_tm_title">
-           
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-              ipsum sit nibh amet egestas tellus.
-            </p> 
-          </div>
-          
-        </div>
-      </div> */}
-
         <div className="edina_tm_contact" id="contact">
           <div className="container">
-            <div className="">
+            <div>
               <h3>Contact</h3>
               <p>
                 I am passionate about making digital spaces work for everyone,
@@ -262,7 +272,7 @@ const EdinaHomeSidebar = () => {
                 actually provide great user experiences.
               </p>
             </div>
-            <div className="extra_info">{/* <Address /> */}</div>
+            <div className="extra_info"></div>
             <div className="mainpart">
               <div
                 className="left"

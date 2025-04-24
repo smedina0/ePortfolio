@@ -2142,6 +2142,19 @@ body.modal {
   padding-left: 30px;
   color: #1a1a1a;
 }
+/* Adjust modal inner box width on small screens */
+@media (max-width: 480px) {
+  .edina_tm_modalbox {
+    width: 100% !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+  }
+
+  .edina_tm_modalbox .box_inner {
+    width: 100% !important;
+    padding: 20px !important;
+  }
+}
 
 /*---------------------------------------------------*/
 /*	10) EDINA CONTACT
@@ -3541,11 +3554,23 @@ a {
   filter: brightness(0);
 }
 
+@charset "utf-8";
+
+/* All existing styles remain above */
+
 .box_inner {
-  position: relative; /* Ensures absolute children like the close button are placed relative to it */
+  width: 95%; /* Or use calc(100% - 40px) for side margin */
+  max-width: 1200px; /* ✅ Wider max for desktop */
+  margin: 0 auto;
+  position: relative;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 0; /* Padding should be inside .description_wrap */
 }
+
 .close-modal {
-  position: fixed; /* fixed instead of absolute for true viewport placement */
+  position: fixed;
   top: 12px;
   right: 12px;
   width: 40px;
@@ -3553,18 +3578,16 @@ a {
   background: none;
   border: none;
   cursor: pointer;
-  z-index: 9999; /* high enough to stay on top of everything */
+  z-index: 9999;
   padding: 0;
   filter: brightness(0);
 }
 
-/* Adjust image inside the button */
 .close-modal img {
   width: 100%;
   height: auto;
 }
 
-/* Smaller screen tweaks */
 @media (max-width: 480px) {
   .close-modal {
     top: 8px;
@@ -3577,55 +3600,62 @@ a {
 body.modal-open {
   overflow: hidden !important;
   height: 100vh;
-  position: fixed; /* Optional: prevents scroll jumps */
+  position: fixed;
   width: 100%;
 }
 
-.edina_tm_modalbox {
-  max-height: 90vh;
-  overflow-y: auto;
-  position: relative;
-}
-
-.edina_tm_modalbox .description_wrap {
-  max-height: 75vh;
-  overflow-y: auto;
-  padding-right: 10px; /* to avoid scrollbar overlap */
-}
-
-.description_wrap {
-  height: 70vh; /* or another fixed value that makes sense */
-  overflow-y: auto;
-  outline: none; /* ensures focus styles are clean */
-  padding-right: 15px; /* optional: to account for scrollbar */
-}
-
-/* Limit modal width and height on smaller screens */
 .custom-modal {
-  max-width: 95vw;
+  max-width: 1100px; /* 🔁 Increase width for desktop */
   width: 100%;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
+  margin: 0 auto; /* Center it */
 }
 
 .edina_tm_modalbox {
   max-height: 90vh;
-  overflow-y: auto;
-  padding: 20px;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  width: 100%;
 }
 
-/* Ensure text fits inside on small screens */
 .edina_tm_modalbox .description_wrap {
-  max-height: 75vh;
+  height: 75vh;
   overflow-y: auto;
+  overflow-x: hidden;
   word-wrap: break-word;
   white-space: normal;
-  padding: 20px;
-  font-size: 16px;
-  line-height: 1.5;
+  padding: 40px 60px; /* 💡 More breathing room for wider box */
+  font-size: 18px;
+  line-height: 1.6;
+  width: 100%;
 }
 
-/* Responsive tweaks */
+.description_wrap {
+  height: 75vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  outline: none;
+  padding: 0;
+  width: 100%;
+}
+
+.description_wrap * {
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+  .edina_tm_modalbox .description_wrap {
+    padding: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
 @media (max-width: 480px) {
   .edina_tm_modalbox .description_wrap {
     padding: 15px;

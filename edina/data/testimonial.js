@@ -31,16 +31,16 @@ module.exports = [
         <br></br>
         <h4>How to Incorporate the Above Rules</h4>
         <p>
-"Shifting Left" is an important concept in the product life cycle as it relates to accessiblilty. This means getting in early and considering accessibility in the early stges. For perceivability, focus on ensuring content and functionality are available across a variety of senosory inputs. For sighted users, ensure that we use enough color contrast and allow for responsiveness (such as screen resizing). For screen reader users, ensure all images have appropriate text alternatives and that all controls have appropriate labels. For users who are hearing impaired, provide transcripts and captions. For users with 
-<br>
-        </br>
-        <br>
-        </br>
-        To ensure your websites are operable, allow for funcionality through keyboards for users who have motor disabilities or who just generally prefer keyboard shortcuts. Time based mechanisms should be avoided as much as possible and also keep in mind to have alternatives for gestures. Ideally touch targets are at least 44 x 44 pixels.
+          "Shifting Left" is an important concept in the product life cycle as it relates to accessiblilty. This means getting in early and considering accessibility in the early stges. For perceivability, focus on ensuring content and functionality are available across a variety of senosory inputs. For sighted users, ensure that we use enough color contrast and allow for responsiveness (such as screen resizing). For screen reader users, ensure all images have appropriate text alternatives and that all controls have appropriate labels. For users who are hearing impaired, provide transcripts and captions.
+          <br>
+          </br>
+          <br>
+          </br>
+          To ensure your websites are operable, allow for funcionality through keyboards for users who have motor disabilities or who just generally prefer keyboard shortcuts. Time based mechanisms should be avoided as much as possible and also keep in mind to have alternatives for gestures. Ideally touch targets are at least 44 x 44 pixels.
         </p>
         <br>
         </br>
-        
+
         <p>
           Understandability is one of those weird ones where the accessibility of it comes mostly from generally good usability practices. For example, using plain language and having consistent navigations/interaction patterns is important. Additionally, having clear error messages, consistent form labels, and supplementary illustrations, icons, or diagrams may help improve accessibility.
         </p>
@@ -64,8 +64,8 @@ module.exports = [
       <>
         <br></br>
         <p>
-Despite being a legal requirement, it is important and fundamental to create inclusive digital experiences that work for everyone. When websites are easy to use for people with disabilities, they become easier for everyone to use. It&apos;s like how curb cuts (those ramps at sidewalk corners) were made for wheelchairs but help people with bikes, strollers, and rolling luggage too. 
-<br></br>
+          Despite being a legal requirement, it is important and fundamental to create inclusive digital experiences that work for everyone. When websites are easy to use for people with disabilities, they become easier for everyone to use. It&apos;s like how curb cuts (those ramps at sidewalk corners) were made for wheelchairs but help people with bikes, strollers, and rolling luggage too.
+          <br></br>
           <br></br>
           About 1 in 4 people have some type of disability. That&apos;s a lot of people who might not be able to use your website if it&apos;s not accessible. By making your site work for them, you&apos;re not shutting out a huge part of your audience. Remember, if you live long enough, you will probably identify as having a disability one day too.
           <br></br>
@@ -92,15 +92,15 @@ Despite being a legal requirement, it is important and fundamental to create inc
     img: "",
     desc: (
       <>
-       <br>
-       </br>
-<p>
+        <br>
+        </br>
+        <p>
 
-It took me a while, but I&apos;ve figured out how to use what I learned in disability studies in my digital accessibility job. The biggest benefit is that I can be a better advocate for people with disabilities. I know I can&apos;t understand every disability, but I can talk about my own experiences and share what I&apos;ve learned about others.
-I now have real examples that help me show my design and development teammates why accessibility matters for real people. It&apos;s much easier to convince my team to make something accessible when I can give specific examples of challenges people face, rather than just saying &quot;we have to do this for legal reasons.&quot; When I tell stories about real problems, my coworkers actually get it.
-When I bring up these real-life examples early in our design process, we make better products from the start instead of trying to fix them later. My background also helps me spot when our designs assume everyone uses technology the same way, which isn&apos;t true.
-This people-first approach not only creates better websites and apps but also teaches my coworkers to think more inclusively as we work together.
-</p>
+          It took me a while, but I&apos;ve figured out how to use what I learned in disability studies in my digital accessibility job. The biggest benefit is that I can be a better advocate for people with disabilities. I know I can&apos;t understand every disability, but I can talk about my own experiences and share what I&apos;ve learned about others.
+          I now have real examples that help me show my design and development teammates why accessibility matters for real people. It&apos;s much easier to convince my team to make something accessible when I can give specific examples of challenges people face, rather than just saying &quot;we have to do this for legal reasons.&quot; When I tell stories about real problems, my coworkers actually get it.
+          When I bring up these real-life examples early in our design process, we make better products from the start instead of trying to fix them later. My background also helps me spot when our designs assume everyone uses technology the same way, which isn&apos;t true.
+          This people-first approach not only creates better websites and apps but also teaches my coworkers to think more inclusively as we work together.
+        </p>
       </>
     ),
     name: "Incorporating Disabilitity Studies to improve my role",
