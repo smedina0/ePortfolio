@@ -329,13 +329,29 @@ module.exports = [
       <>
         <h4>Course Description</h4>
         <p>
-
+          This is a graduate course that focuses on how administrators lead, manage, organize, and support the
+          implementation of the mission of community based organizations for individuals with disabilities. The
+          course reviews an array of leadership responsibilities, theories, and strategies to ensure effective and
+          efficient supports for individuals with disabilities. The course includes discussions of current issues and
+          responsibilities emerging leaders will address as the field changes and responds to new federal and state
+          requirements.
         </p>
         <h4>Program Goals & Assignments</h4>
+        <ul>
+          <li>Describe the role and function of leaders in devising options, opportunities, and enriching supports to enhance person-centered outcomes and improve the responsiveness of organizations offering supports for individuals with disabilities.</li>
+          <li>Describe the legal and governance framework in which nonprofits operate.</li>
+          <li>Describe the evolution of the disability service system(s) in which they work, and regulatory and funding streams.</li>
+          <li>Analyze how to improve program and organizational performance by researching the use of modern management techniques that emphasize quality enhancement.</li>
+          <li>Apply critical thinking to issues related to staff recruitment, retention, and training strategies for community-based human service agencies.</li>
+          <li>Describe the roles of collaboration, evaluation, strategic planning, accountability, and reliability, including various methods of evaluating the work of nonprofits.</li>
+          <li>Analyze the role of leadership in promoting public policies to improve the quality of life of people with disabilities and promote social justice.</li>
+        </ul>
+
+        <br></br>
 
         <h4>Reflection</h4>
         <p>
-
+          This course opened me up to topics I had never previosuly considered. Never in my life have I thought about how to be an effective leader in comunity based organizations. This course gave me that knowledge as it relates to organizations focusing on serving people with disabilities. I learned so much detail about upper administration and how leaders must navigate these organizations and even how to improve organizational performance, staff development, and strategic planning. I hope to one day take on a managerial/administrative role in an accessibility based organization, so the values and tactics taught in this class will greatly benefit me as I become an advocate and a leader.
         </p>
       </>
     ),

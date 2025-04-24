@@ -206,7 +206,11 @@ const Sidebar = () => {
             {/* End .logo */}
 
             {(isMobile ? isOpen : true) && (
-              <div className="menu">
+              <div
+                role="nav"
+                aria-label="Portfolio Navigation"
+                className="menu"
+              >
                 <ul className="anchor_nav">
                   {sidebarContent.map((val, i) => (
                     <li key={i}>

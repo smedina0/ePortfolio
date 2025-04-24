@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import Modal from 'react-modal';
 import ModalContent from './modal/ModalContent';
 import Image from 'next/image';
@@ -7,12 +7,39 @@ Modal.setAppElement('#__next');
 
 const About = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const scrollRef = useRef(null);
+
   function toggleModalOne() {
     setIsOpen(!isOpen);
   }
 
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add('modal-open');
+      // Delay focus slightly to ensure DOM is rendered
+      setTimeout(() => {
+        scrollRef.current?.focus();
+      }, 50);
+    } else {
+      document.body.classList.remove('modal-open');
+    }
+    return () => document.body.classList.remove('modal-open');
+  }, [isOpen]);
+
+  const handleScrollKeys = (e) => {
+    const scrollEl = scrollRef.current;
+    if (!scrollEl) return;
+
+    if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      scrollEl.scrollBy({ top: 50, behavior: 'smooth' });
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      scrollEl.scrollBy({ top: -50, behavior: 'smooth' });
+    }
+  };
+
   return (
-    //    ABOUT
     <div className="edina_tm_about" id="about">
       <div className="container">
         <div className="about_title">
@@ -31,29 +58,15 @@ const About = () => {
               </h3>
               <p>
                 I am an accessibility designer/developer with Dysgraphia from
-                Harlem, NY. I currently live in NJ, where I moved after
-                graduating from college. I studied neuroscience and theatre as
-                an undergrad at Middlebury College. After that, I purused my
-                Master&apos;s Degree from NYU in Integrated Digital Media - with
-                a thesis on video game accessibility!
+                Harlem, NY...
               </p>
-              <br></br>
+              <br />
               <p>
-                While at NYU, I worked part-time for the NYU Moses Center for
-                Students with Disabilities where I made PDFs accessible and
-                learned about the Web Content Accessibility Guidelines (WCAG). I
-                also worked part time at the City University of New York (CUNY)
-                Central Office. Eventually I switched over from the Moses Center
-                for Students with Disabilities to NYU IT where I worked on
-                ensuring designs were accessible before moving to production.
+                While at NYU, I worked part-time for the NYU Moses Center...
               </p>
-              <br></br>
+              <br />
               <p>
-                After graduating, I worked full time at CUNY for a few years
-                before eventually moving into the corporate world as an
-                accessibility QA Engineer at JPMorgan Chase. After 3 years, I
-                now find myself at Wells Fargo as an accessibility designer and
-                pursing my Master&apos;s in Disability studies from CUNY SPS.
+                After graduating, I worked full time at CUNY for a few years...
               </p>
             </div>
             <div className="my_skills" style={{ marginTop: '10px' }}>
@@ -68,7 +81,6 @@ const About = () => {
               </div>
             </div>
           </div>
-          {/* End leftpart */}
 
           <div className="rightpart">
             <div className="image-container">
@@ -87,21 +99,23 @@ const About = () => {
               </div>
             </div>
           </div>
-          {/* End righttpart */}
         </div>
       </div>
 
-      {/* Start About Details Modal */}
       <Modal
         isOpen={isOpen}
         onRequestClose={toggleModalOne}
-        contentLabel="My dialog"
+        contentLabel="About Me Modal"
         className="custom-modal about-popup-wrapper"
-        overlayClassName="custom-overlay "
+        overlayClassName="custom-overlay"
         closeTimeoutMS={500}
       >
         <div className="edina_tm_modalbox">
-          <button className="close-modal" onClick={toggleModalOne}>
+          <button
+            className="close-modal"
+            onClick={toggleModalOne}
+            onKeyDown={handleScrollKeys}
+          >
             <Image
               width={45}
               height={45}
@@ -109,18 +123,19 @@ const About = () => {
               alt="close icon"
             />
           </button>
-          {/* End close icon */}
 
           <div className="box_inner">
-            <div className="description_wrap scrollable">
+            <div
+              className="description_wrap scrollable"
+              ref={scrollRef}
+              tabIndex={-1}
+              onKeyDown={handleScrollKeys}
+            >
               <ModalContent />
             </div>
           </div>
-          {/* End box inner */}
         </div>
-        {/* End modal box news */}
       </Modal>
-      {/* End  About Details Modal */}
     </div>
   );
 };

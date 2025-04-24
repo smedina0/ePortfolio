@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Modal from 'react-modal';
 import Tilt from 'react-parallax-tilt';
 import servicesData from '../../data/services';
@@ -9,6 +9,7 @@ Modal.setAppElement('#__next');
 const Service = () => {
   const [singleData, setSingleData] = useState({});
   const [isOpen, setIsOpen] = useState(false);
+  const scrollRef = useRef(null);
 
   const handleBServicesData = (id) => {
     const find = servicesData.find((item) => item?.id === id);
@@ -19,6 +20,38 @@ const Service = () => {
   const handleModle = (id) => {
     handleBServicesData(id);
   };
+
+  const handleScrollKeys = (e) => {
+    const wrap = scrollRef.current;
+    if (!wrap) return;
+    if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      wrap.scrollBy({ top: 30, behavior: 'smooth' });
+    }
+    if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      wrap.scrollBy({ top: -30, behavior: 'smooth' });
+    }
+  };
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add('modal-open');
+      // Attach keydown listener to window so scrolling works on any focus target
+      window.addEventListener('keydown', handleScrollKeys);
+      // Auto focus on scrollable region
+      if (scrollRef.current) {
+        scrollRef.current.focus();
+      }
+    } else {
+      document.body.classList.remove('modal-open');
+      window.removeEventListener('keydown', handleScrollKeys);
+    }
+    return () => {
+      document.body.classList.remove('modal-open');
+      window.removeEventListener('keydown', handleScrollKeys);
+    };
+  }, [isOpen]);
 
   return (
     <div className="service_list">
@@ -31,7 +64,7 @@ const Service = () => {
                   <div className="service_title">
                     <h3>{item.title}</h3>
                   </div>
-                  <div className="">
+                  <div>
                     <button
                       type="button"
                       className="learnMoreButton"
@@ -57,32 +90,23 @@ const Service = () => {
       <Modal
         isOpen={isOpen}
         onRequestClose={() => setIsOpen(false)}
-        contentLabel="My dialog"
+        contentLabel="Service details"
         className="custom-modal"
         overlayClassName="custom-overlay"
         closeTimeoutMS={500}
       >
         <div className="edina_tm_modalbox">
-          {/* <button className="close-modal" onClick={() => setIsOpen(false)}>
-            <Image
-              width={45}
-              height={45}
-              src="/img/svg/cancel.svg"
-              alt="close"
-            />
-          </button> */}
-          {/* End close icon */}
-
           <div className="box_inner">
-            <div className="description_wrap ">
-              <button className="close-modal" onClick={() => setIsOpen(false)}>
-                <Image
-                  width={45}
-                  height={45}
-                  src="/img/svg/cancel.svg"
-                  alt="close"
-                />
-              </button>
+            <button className="close-modal" onClick={() => setIsOpen(false)}>
+              <Image
+                width={45}
+                height={45}
+                src="/img/svg/cancel.svg"
+                alt="close"
+              />
+            </button>
+
+            <div className="description_wrap" ref={scrollRef} tabIndex={-1}>
               <div className="popup_informations">
                 {singleData?.popupImg && (
                   <div className="image">
@@ -95,8 +119,6 @@ const Service = () => {
                   </div>
                 )}
 
-                {/* End big image */}
-
                 <div className="description">
                   <h3>{singleData?.popupTitle}</h3>
                   {singleData?.firstDescriptionText}
@@ -105,11 +127,8 @@ const Service = () => {
               </div>
             </div>
           </div>
-          {/* End box inner */}
         </div>
-        {/* End modal box news */}
       </Modal>
-      {/* End Modal  */}
     </div>
   );
 };

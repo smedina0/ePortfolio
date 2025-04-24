@@ -3540,3 +3540,96 @@ a {
   z-index: 10;
   filter: brightness(0);
 }
+
+.box_inner {
+  position: relative; /* Ensures absolute children like the close button are placed relative to it */
+}
+.close-modal {
+  position: fixed; /* fixed instead of absolute for true viewport placement */
+  top: 12px;
+  right: 12px;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 9999; /* high enough to stay on top of everything */
+  padding: 0;
+  filter: brightness(0);
+}
+
+/* Adjust image inside the button */
+.close-modal img {
+  width: 100%;
+  height: auto;
+}
+
+/* Smaller screen tweaks */
+@media (max-width: 480px) {
+  .close-modal {
+    top: 8px;
+    right: 8px;
+    width: 32px;
+    height: 32px;
+  }
+}
+
+body.modal-open {
+  overflow: hidden !important;
+  height: 100vh;
+  position: fixed; /* Optional: prevents scroll jumps */
+  width: 100%;
+}
+
+.edina_tm_modalbox {
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.edina_tm_modalbox .description_wrap {
+  max-height: 75vh;
+  overflow-y: auto;
+  padding-right: 10px; /* to avoid scrollbar overlap */
+}
+
+.description_wrap {
+  height: 70vh; /* or another fixed value that makes sense */
+  overflow-y: auto;
+  outline: none; /* ensures focus styles are clean */
+  padding-right: 15px; /* optional: to account for scrollbar */
+}
+
+/* Limit modal width and height on smaller screens */
+.custom-modal {
+  max-width: 95vw;
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.edina_tm_modalbox {
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+/* Ensure text fits inside on small screens */
+.edina_tm_modalbox .description_wrap {
+  max-height: 75vh;
+  overflow-y: auto;
+  word-wrap: break-word;
+  white-space: normal;
+  padding: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+  .edina_tm_modalbox .description_wrap {
+    padding: 15px;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}
