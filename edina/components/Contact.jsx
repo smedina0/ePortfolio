@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import { toast } from 'react-toastify';
+import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
@@ -18,6 +18,10 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result);
+          const liveRegion = document.getElementById('toast-aria-live');
+          if (liveRegion) {
+            liveRegion.textContent = 'Message sent successfully!';
+          }
           toast.success('Message Sent Successfully!', {
             position: 'top-right',
             autoClose: 2000,
@@ -30,7 +34,11 @@ const Contact = () => {
           document.getElementById('myForm').reset();
         },
         (error) => {
-          toast.error('Ops Message Not Sent!', {
+          const liveRegion = document.getElementById('toast-aria-live');
+          if (liveRegion) {
+            liveRegion.textContent = 'Message failed to send.';
+          }
+          toast.error('Oops! Message Not Sent.', {
             position: 'top-right',
             autoClose: 2000,
             hideProgressBar: false,
@@ -52,33 +60,68 @@ const Contact = () => {
         onSubmit={sendEmail}
       >
         <div className="first_row">
-          <input type="text" placeholder="Name *" name="name" required />
-        </div>
-        {/* End .first_row */}
-
-        <div className="second">
+          <label htmlFor="name">Name (required)</label>
           <input
-            type="email"
-            placeholder="Email *"
-            name="user_email"
+            type="text"
+            id="name"
+            name="name"
             required
+            aria-required="true"
           />
         </div>
-        {/* End .second */}
+
+        <div className="second">
+          <label htmlFor="user_email">Email (required)</label>
+          <input
+            type="email"
+            id="user_email"
+            name="user_email"
+            required
+            aria-required="true"
+          />
+        </div>
 
         <div className="third">
-          <textarea placeholder="Message *" name="message" required></textarea>
+          <label htmlFor="message">Message (required)</label>
+          <textarea
+            id="message"
+            name="message"
+            required
+            aria-required="true"
+          ></textarea>
         </div>
-        {/* End .third */}
 
         <div className="edina_tm_button">
           <button type="submit" className="color">
             Submit
           </button>
         </div>
-        {/* End tokyo_tm_button */}
       </form>
-      {/* End contact */}
+
+      {/* ARIA live region for screen reader announcements */}
+      <div
+        id="toast-aria-live"
+        className="sr-only"
+        role="status"
+        aria-live="polite"
+        aria-atomic="true"
+      ></div>
+
+      <ToastContainer role={undefined} />
+
+      {/* Visually hidden screen reader style */}
+      <style jsx>{`
+        .sr-only {
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          padding: 0;
+          overflow: hidden;
+          clip: rect(0, 0, 0, 0);
+          white-space: nowrap;
+          border: 0;
+        }
+      `}</style>
     </>
   );
 };

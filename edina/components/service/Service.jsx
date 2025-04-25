@@ -24,7 +24,7 @@ const Service = () => {
       if (triggerRef.current) {
         triggerRef.current.focus();
       }
-    }, 500); // match closeTimeoutMS
+    }, 500);
   };
 
   const handleModle = (id, event) => {
@@ -48,9 +48,7 @@ const Service = () => {
   useEffect(() => {
     if (isOpen) {
       document.body.classList.add('modal-open');
-      // Attach keydown listener to window so scrolling works on any focus target
       window.addEventListener('keydown', handleScrollKeys);
-      // Auto focus on scrollable region
       if (scrollRef.current) {
         scrollRef.current.focus();
       }
@@ -78,21 +76,22 @@ const Service = () => {
               <div className="list_inner" onClick={() => handleModle(item?.id)}>
                 <div className="hover">
                   <div className="service_title">
-                    <h3>{item.title}</h3>
+                    <h3 id={`heading-${item.id}`}>{item.title}</h3>
                   </div>
                   <div>
                     <button
                       type="button"
                       className="learnMoreButton"
-                      aria-label={`Learn more about ${item.title}`}
+                      id={`learnMore-${item.id}`}
+                      aria-labelledby={`heading-${item.id} learnMore-${item.id}`}
                       onClick={(e) => {
-                        triggerRef.current = e.currentTarget; // 👈 capture trigger
+                        triggerRef.current = e.currentTarget;
                         handleModle(item?.id);
                       }}
                       onKeyDown={(e) => {
                         if (e.key === 'Enter' || e.key === ' ') {
                           e.preventDefault();
-                          triggerRef.current = e.currentTarget; // 👈 capture trigger
+                          triggerRef.current = e.currentTarget;
                           handleModle(item?.id);
                         }
                       }}
