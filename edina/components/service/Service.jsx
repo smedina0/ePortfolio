@@ -76,7 +76,7 @@ const Service = () => {
               <div className="list_inner" onClick={() => handleModle(item?.id)}>
                 <div className="hover">
                   <div className="service_title">
-                    <h3 id={`heading-${item.id}`}>{item.title}</h3>
+                    <h5 id={`heading-${item.id}`}>{item.title}</h5>
                   </div>
                   <div>
                     <button
