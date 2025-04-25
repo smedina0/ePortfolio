@@ -177,6 +177,21 @@ const EdinaHomeSidebar = () => {
           <div className="container">
             <div className="edina_tm_title">
               <h3>Program Reflection</h3>
+              <div
+                style={{
+                  position: 'relative',
+                  width: '100%',
+                  aspectRatio: '16 / 9',
+                  marginBottom: '20px',
+                }}
+              >
+                <Image
+                  src="/img/about/deepthought.jpg"
+                  alt=""
+                  fill
+                  style={{ objectFit: 'cover' }}
+                />
+              </div>
             </div>
             <p>
               My time in this Master&apos;s in Disability Studies program has

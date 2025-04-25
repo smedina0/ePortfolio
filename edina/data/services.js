@@ -7,7 +7,8 @@ module.exports = [
         Psychosocial, Cultural and Political Aspects of Disability
       </>
     ),
-    popupImg: "",
+    alt: "",
+    popupImg: "/img/about/judyh.jpg",
     popupTitle: `DSAB 601: Psychosocial, Cultural and Political Aspects of Disability`,
     firstDescriptionText: (
       <>
@@ -62,7 +63,7 @@ module.exports = [
         Embodiment & Disability
       </>
     ),
-    popupImg: "",
+    popupImg: "/img/about/embody.jpeg",
     popupTitle: `DSAB 602: Embodiment & Disability`,
     firstDescriptionText: (
       <>
@@ -116,7 +117,7 @@ module.exports = [
         Disability & Diversity
       </>
     ),
-    popupImg: "",
+    popupImg: "/img/about/diversity.jpg",
     popupTitle: `DSAB 605: Disability & Diversity`,
     firstDescriptionText: (
       <>
@@ -155,7 +156,7 @@ module.exports = [
             <ul>
               <li>What are the dominant U.S. and British models of disability?</li>
               <li>How do they differ from one another?</li>
-              <li>What are Shakespeare and Watson's criticisms of these models?</li>
+              <li>What are Shakespeare and Watson&apos;s criticisms of these models?</li>
               <li>How does Carol Thomas respond to these criticisms?</li>
             </ul>
           </li>
@@ -181,7 +182,7 @@ module.exports = [
         Qualitative Research Methods
       </>
     ),
-    popupImg: "",
+    popupImg: "/img/about/qualitative.jpg",
     popupTitle: `DSAB 611: Qualitative Research Methods`,
     firstDescriptionText: (
       <>
@@ -239,7 +240,7 @@ module.exports = [
         Disability Law & Policy
       </>
     ),
-    popupImg: "",
+    popupImg: "/img/about/law.jpg",
     popupTitle: `DSAB 626: Disability Law & Policy`,
     firstDescriptionText: (
       <>
@@ -283,7 +284,7 @@ module.exports = [
         Disability Studies & the Humanities
       </>
     ),
-    popupImg: "",
+    popupImg: "/img/about/humanities.jpg",
     popupTitle: `DSAB 621: Disability Studies & the Humanities`,
     firstDescriptionText: (
       <>
@@ -323,7 +324,7 @@ module.exports = [
         Leadership in Disability Services Agencies
       </>
     ),
-    popupImg: "",
+    popupImg: "/img/about/leadership.jpg",
     popupTitle: `DSAB 624: Leadership in Disability Services Agencies`,
     firstDescriptionText: (
       <>
@@ -369,7 +370,7 @@ module.exports = [
         Disability Studies in Education
       </>
     ),
-    popupImg: "",
+    popupImg: "/img/about/education.jpg",
     popupTitle: `DSAB 628: Disability Studies in Education`,
     firstDescriptionText: (
       <>
@@ -423,7 +424,7 @@ module.exports = [
         Aging & Disability
       </>
     ),
-    popupImg: "",
+    popupImg: "/img/about/aging.jpg",
     popupTitle: `DSAB 630: Aging & Disability`,
     firstDescriptionText: (
       <>
