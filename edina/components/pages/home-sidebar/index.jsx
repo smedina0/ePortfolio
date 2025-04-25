@@ -111,10 +111,11 @@ const EdinaHomeSidebar = () => {
               private organizations.
               <br />
               <br />
-              Graduates of the Master's Degree in Disability Studies program are
-              reflective, knowledgeable and flexible professionals, researchers,
-              educators and advocates in their chosen disability-related field.
-              Graduates think, write and speak critically about:
+              Graduates of the Master&apos;s Degree in Disability Studies
+              program are reflective, knowledgeable and flexible professionals,
+              researchers, educators and advocates in their chosen
+              disability-related field. Graduates think, write and speak
+              critically about:
               <br />
               <ul className="unstyledList">
                 <li>Disability experience, both individual and social;</li>
@@ -240,7 +241,7 @@ const EdinaHomeSidebar = () => {
             >
               <Image
                 src="/img/about/digital-accessibility.jpg"
-                alt="A person pressing a keyboard key reading 'Digital Accessibility'"
+                alt="A person pressing a keyboard key that has the words Digital Accessibility written on it"
                 fill
                 style={{ objectFit: 'cover' }}
               />
