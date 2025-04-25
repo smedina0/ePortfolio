@@ -352,7 +352,7 @@ module.exports = [
 
         <h4>Reflection</h4>
         <p>
-          This course opened me up to topics I had never previosuly considered. Never in my life have I thought about how to be an effective leader in comunity based organizations. This course gave me that knowledge as it relates to organizations focusing on serving people with disabilities. I learned so much detail about upper administration and how leaders must navigate these organizations and even how to improve organizational performance, staff development, and strategic planning. I hope to one day take on a managerial/administrative role in an accessibility based organization, so the values and tactics taught in this class will greatly benefit me as I become an advocate and a leader.
+          This course opened me up to topics I had never previosuly considered. Never in my life have I thought about how to be an effective leader in comunity based organizations. This course gave me that knowledge as it relates to organizations focusing on serving people with disabilities. I learned so much detail about upper administration and how leaders must navigate these organizations and even how to improve organizational performance, staff development, and strategic planning. I hope to one day take on a managerial/administrative role in an accessibility based organization, so the values and tactics taught in this class will greatly benefit me as I become an advocate and leader.
         </p>
       </>
     ),
