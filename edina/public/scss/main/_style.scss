@@ -3663,3 +3663,31 @@ body.modal-open {
     line-height: 1.4;
   }
 }
+.list_inner:hover .hover {
+  background-color: inherit !important;
+  box-shadow: none !important;
+  filter: none !important;
+  mix-blend-mode: normal !important;
+  transition: none !important;
+}
+.edina_tm_services ul li .list_inner:hover .service_title {
+  mix-blend-mode: normal !important;
+  background: none !important;
+  color: inherit !important;
+}
+
+.edina_tm_services ul li .list_inner .service_title {
+  background: transparent !important;
+}
+.edina_tm_services ul li .list_inner:hover::before {
+  content: none !important;
+  background: none !important;
+  mix-blend-mode: normal !important;
+  box-shadow: none !important;
+}
+.edina_tm_services ul li .list_inner:hover::after {
+  content: none !important;
+  background: none !important;
+  mix-blend-mode: normal !important;
+  box-shadow: none !important;
+}

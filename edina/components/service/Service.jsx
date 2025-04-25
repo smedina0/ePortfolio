@@ -109,7 +109,7 @@ const Service = () => {
       <Modal
         isOpen={isOpen}
         onRequestClose={closeModal}
-        contentLabel="Service details"
+        contentLabel=""
         className="custom-modal"
         overlayClassName="custom-overlay"
         closeTimeoutMS={500}
