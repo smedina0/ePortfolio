@@ -202,10 +202,10 @@ const EdinaHomeSidebar = () => {
               the ins and outs of document accessibility (Microsoft Office/Adobe
               Suite), annotations in design accessibility, accessibility quality
               assurance/accessibility testing, and accessibility development. In
-              my time in digital accessibility, I learned the "trade" of digital
-              accessibility, but I realized that I was lacking in terms of the
-              social, political, administrative, and legal aspects of
-              disability. This lack of knowledge was disappointing to me.
+              my time in digital accessibility, I learned the &quot;trade&quot;
+              of digital accessibility, but I realized that I was lacking in
+              terms of the social, political, administrative, and legal aspects
+              of disability. This lack of knowledge was disappointing to me.
               Reflecting on this program, I am very grateful for what I have
               learned and the knowledge, resources, and conversations this
               program has provided me with. I have taken what I learned in this
