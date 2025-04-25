@@ -241,7 +241,7 @@ const EdinaHomeSidebar = () => {
             >
               <Image
                 src="/img/about/digital-accessibility.jpg"
-                alt="A person pressing a keyboard key that has the words Digital Accessibility written on it."
+                alt="A person pressing a keyboard key that has the words Digital Accessibility written on it"
                 fill
                 style={{ objectFit: 'cover' }}
               />
