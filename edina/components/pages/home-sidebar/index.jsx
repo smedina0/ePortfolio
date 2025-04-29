@@ -197,11 +197,11 @@ const EdinaHomeSidebar = () => {
               My time in this Master&apos;s in Disability Studies program has
               been a profound exploration of disability as a complex experience.
               The program had a particularly curated selection of courses that
-              has provided me with several perspectives that extend beyond
-              traditional educational teachings. In courses like Psyhosocial,
-              Cultural and Political Aspects of Disability (DSAB 601) and
-              Dsiability Studies & the Humanities (DSAB 621), we challenged
-              societal narratives and understood disability through
+              has provided me with several perspectives that{' '}
+              <b>extend beyond traditional educational teachings.</b> In courses
+              like Psyhosocial, Cultural and Political Aspects of Disability
+              (DSAB 601) and Dsiability Studies & the Humanities (DSAB 621), we
+              challenged societal narratives and understood disability through
               intersectional and humanistic lenses. Alongside the scholarly and
               theoretical perspectives were courses related to the practical
               applciations of disabilities studies like Leadership in Disability
@@ -225,7 +225,8 @@ const EdinaHomeSidebar = () => {
               learned and the knowledge, resources, and conversations this
               program has provided me with. I have taken what I learned in this
               course and have applied it to my work, my conversations, and my
-              advocacy for people with disabilities. I am much more confident
+              advocacy for people with disabilities.{' '}
+              <b>I am much more confident </b>
               when talking about usability and when explaining the importance of
               what I do with people in related fields
               (designers/developers/testers/product owners/etc).
@@ -286,6 +287,7 @@ const EdinaHomeSidebar = () => {
                 tech experience. My goal is to break down digital barriers and
                 create online experiences that are not just accessible, but
                 actually provide great user experiences.
+                
               </p>
             </div>
             <div className="extra_info"></div>

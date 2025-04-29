@@ -6,29 +6,39 @@ module.exports = [
         <p>
           Digital accessibility is the idea of designing, developing, testing, and maintaining products and software so that they are usable for everyone, with an extra emphasis on being usable by people with disabilities. It ensures that no one is excluded from accessing digital content due to impairments or limitations. The goal is to remove barriers and create inclusive experiences that benefit not just people with disabilities, but everyone. The pillars of digital accessibility are perceivability, operability, understandability, and robustness (POUR), and together, they provide a strong framework for creating truly accessible and inclusive digital experiences.
           <br />
+          <br></br>
+
         </p>
 
         <dl>
           <dt><strong>Perceivability</strong></dt>
+          <br></br>
           <dd>
             Information and user interface components must be presented to users in ways they can perceive. This means content should be available through various ways that rely on different senses (e.g., text alternatives for images, captions for audio), so users can access it using assistive technologies or different formats that work for them.
             <br />
+            <br></br>
           </dd>
 
           <dt><strong>Operability</strong></dt>
+
           <dd>
+            <br></br>
             User interface components and navigation must be operable. This means users should be able to interact with all controls and features using the input method of their choice (such as keyboard, voice, or assistive technology) without requiring interactions that some users cannot perform. This means that a user should not be expected to receive assistance when attempting to acess content and functionality on a website.
             <br />
+            <br></br>
           </dd>
 
           <dt><strong>Understandability</strong></dt>
           <dd>
+            <br></br>
             Information and the operation of the user interface must be understandable. Content should be clear and predictable, with consistent navigation to prevent errors and confusion, especially for users with cognitive or learning disabilities. For the most part, the major princicples of user experience and usability would enforce the understandability for a website, hence, why accessible design tends to align with the best user experience and usability practices.
             <br />
+            <br></br>
           </dd>
 
           <dt><strong>Robustness</strong></dt>
           <dd>
+            <br></br>
             Content must be robust enough to be reliably used by a wide variety of assistive technologies and viewports. This ensures that as technologies evolve, the content remains accessible and functional and also covers a wide variety of tools end uses may use.
           </dd>
           <br></br>
@@ -67,8 +77,10 @@ module.exports = [
     img: "",
     desc: (
       <>
-        <br></br>
+
         <p>
+          <br></br>
+          <br></br>
           Despite being a legal requirement, it is important and fundamental to create inclusive digital experiences that work for everyone. When websites are easy to use for people with disabilities, they become easier for everyone to use. It&apos;s like how curb cuts (those ramps at sidewalk corners) were made for wheelchairs but help people with bikes, strollers, and rolling luggage too.
           <br></br>
           <br></br>
